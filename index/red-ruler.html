@@ -1,0 +1,328 @@
+﻿<!DOCTYPE html>
+<!--+++++++++++++++++++++++++++++-->
+<!--18我的红包-     √   -->
+<!--+++++++++++++++++++++++++++++-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>红包</title>
+        <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport"/>
+        <meta content="yes" name="apple-mobile-web-app-capable"/>
+        <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+        <meta content="telephone=no" name="format-detection"/>
+        <!--导入css-->
+        <link type="text/css" href="../static/css/red2.css" rel="stylesheet" />
+
+
+        <link rel="stylesheet" href="../static/iconfont/iconfont.css">
+    </head>
+    <body style="background-color: #F1F2F4;">
+        <section class="aui-flexView">
+            <div class="header">
+                <div class="header-index-fenlei">
+                    <div class="nav_left">
+                        <a href="javascript:history.go(-1)">
+                            <div class="nav_op">
+                                <img src="../static/picture/wd-fh.png" class="nav-op-img-fenlei">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="nav_center">
+                        <span class="aui-center-title inpotent" >红包</span>
+                    </div>
+                    <div class="nav_ss ">
+                        <div class="action-list" onclick="javascript:OpenDiv();" id="open">
+                            <a class="sy-xx-fenlei directorder" style="margin-left: 0">使用规则</a>
+                        </div>
+                    </div>
+                            <!--<div class="action-list" id="chose">-->
+                                <!--<a class="red-color directorder" style="color: #fff;">立即购买</a>-->
+                            <!--</div>-->
+
+
+                    </div>
+                </div>
+
+            </div>
+            <!--内容部分-->
+            <section class="aui-scrollView-red2" >
+                <div class="aui-tab" data-ydui-tab>
+                    <ul class="tab-nav">
+                        <!--顶部导航栏切换  切换效果js:tab.js第59行 -->
+                        <li class="tab-nav-item tab-active " >
+                            <a href="javascript:;" style="font-size: 17px">未使用(2)</a>
+
+                        </li>
+                        <li class="tab-nav-item" >
+                            <a href="javascript:;" style="font-size: 17px">使用记录(1)</a>
+
+                        </li>
+                        <li class="tab-nav-item " >
+                            <a href="javascript:;" style="font-size: 17px">已过期(1)</a>
+                        </li>
+                    </ul>
+                    <!--&lt;!&ndash;分割线&ndash;&gt;-->
+                    <!--<div class="divHeight"></div>-->
+                    <div class="tab-panel">
+                        <!-- 红包模块 class : tab-panel-item  添加tab-active 类,则为刷新后首先显示-->
+                        <div class="tab-panel-next">
+                            <div class="tab-panel-item tab-active">
+                                <div class="aui-mail-product-new">
+                                    <a href="javascript:;" class="news-block-item">
+                                        <!--商品图片-->
+                                        <div class="news-block-item-left-new">
+                                            <img src="../static/picture/sy-hb.png" alt="" style="border-radius: 5px;padding-right:6%;border-right: 1px dashed  #bebdbd;">
+                                        </div>
+                                        <div class="news-block-item-right">
+                                            <div class="item-right-top">
+                                                <!--名-->
+                                                <div class="item-right-top-succeed">
+                                                    <p>母婴用品红包</p>
+                                                </div>
+                                            </div>
+                                            <!-- 价格 -->
+                                            <div class="item-right-buttom">
+                                                <div class="item-right-buttem-l">
+                                                    <div class="aui-mail-product-item-top goods-font"><li id="news-content3">•消费200使用</li></div>
+                                                    <div class="aui-mail-product-item-top goods-font"><li id="news-content4">•2018.5.24-2018.10.30</li></div>
+                                                </div>
+                                                <div class="item-right-buttem-r">
+                                                    <div class="item-right-pire">￥</div><div class="item-right-pire-int">50</div><div class="item-right-pire-float">.0</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tab-panel-item tab-active">
+                                <div class="aui-mail-product-new">
+                                    <a href="javascript:;" class="news-block-item">
+                                        <!--商品图片-->
+                                        <div class="news-block-item-left-new">
+                                            <img src="../static/picture/sy-hb.png" alt="" style="border-radius: 5px;padding-right:6%;border-right: 1px dashed  #bebdbd;">
+                                        </div>
+
+                                        <div class="news-block-item-right">
+                                            <div class="item-right-top">
+                                                <!--商品名-->
+                                                <div class="item-right-top-succeed">
+                                                    <p>母婴用品红包</p>
+                                                </div>
+
+                                            </div>
+
+                                            <!-- 商品价格 -->
+                                            <div class="item-right-buttom">
+                                                <div class="item-right-buttem-l">
+                                                    <div class="aui-mail-product-item-top goods-font"><li id="news-content3">•消费200使用</li></div>
+                                                    <div class="aui-mail-product-item-top goods-font"><li id="news-content4">•2018.5.24-2018.10.30</li></div>
+
+                                                </div>
+                                                <div class="item-right-buttem-r">
+
+                                                    <div class="item-right-pire">￥</div><div class="item-right-pire-int">50</div><div class="item-right-pire-float">.0</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="tab-panel-item tab-active">
+                                <div class="aui-mail-product-new">
+                                    <a href="javascript:;" class="news-block-item">
+                                        <!--商品图片-->
+                                        <div class="news-block-item-left-new">
+                                            <img src="../static/picture/sy-hb.png" alt="" style="border-radius: 5px;padding-right:6%;border-right: 1px dashed  #bebdbd;">
+                                        </div>
+
+                                        <div class="news-block-item-right">
+                                            <div class="item-right-top">
+                                                <!--商品名-->
+                                                <div class="item-right-top-succeed">
+                                                    <p>母婴用品红包</p>
+                                                </div>
+
+                                            </div>
+
+                                            <!-- 商品价格 -->
+                                            <div class="item-right-buttom">
+                                                <div class="item-right-buttem-l">
+                                                    <div class="aui-mail-product-item-top goods-font"><li id="news-content3">•消费200使用</li></div>
+                                                    <div class="aui-mail-product-item-top goods-font"><li id="news-content4">•2018.5.24-2018.10.30</li></div>
+
+                                                </div>
+                                                <div class="item-right-buttem-r">
+
+                                                    <div class="item-right-pire">￥</div><div class="item-right-pire-int">50</div><div class="item-right-pire-float">.0</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!--红包使用规范 弹出-->
+            <!--<div id="popLayer" >-->
+
+            <!--</div>-->
+            <div class="ruler" style="" id="div1" >
+                <div class="ruler-in">
+                    <div class="ruler-tit">红包规范</div>
+                    <div class="ruler-content">
+                        <p>近日，因部分用户伪造虚假信息申请信用卡，给我司平台造成了严重影响。为了进一步规范信用卡申请的近日，因部分用户伪造虚假信息申请信用卡，给我司平台造成了严重影响。为了进一步规范信用卡申请的规则，严格执行各行信用卡网申的规定，现对日，因部分用户伪近日，因部分用户伪造虚假信息申请信用卡，给我司平台造成了严重影响。为了进一步规范信用卡申请的规则，严格执行各行信用卡网申的规定，现对日，因部分用户伪近日，因部分用户伪造虚假信息申请信用卡，给我司平台造成了严重影响。为了进一步规范信用卡申请的规则，严格执行各行信用卡网申的规定，现对日，因部分用户伪近日，因部分用户伪造虚假信息申请信用卡，给我司平台造成了严重影响。为了进一步规范信用卡申请的规则，严格执行各行信用卡网申的规定，现对日，因部分用户伪近日，因部分用户伪造虚假信息申请信用卡，给我司平台造成了严重影响。为了进一步规范信用卡申请的规则，严格执行各行信用卡网申的规定，现对日，因部分用户伪规则，严格执行各行信用卡网申的规定，现对日，因部分用户伪造虚假信息申请信用卡，给我司平台造成了严重影响。为了进一步规范信用卡申请的规则，严格执行各行信用卡网申的规定，现对日，因部分用户伪造虚假信息申请信用卡，给我司平台造成了严重影响。为了进一步规范信用卡申请的规则，严格执行各行信用卡网申的规定，现对</p>
+                    </div>
+                    <div class="ruler-button" onclick="javascript:CloseDiv();"> 我知道了</div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <script type="text/javascript" src="../static/js/jquery.min.js"></script>
+        <script type="text/javascript" src="../static/js/tab.js"></script>
+
+        <script>
+            window.onload = function() {
+                var lis = document.querySelectorAll("li");
+                var p = document.querySelector("p");
+
+                for(var i = 0; i < lis.length; i++) {
+                    count(i);
+                }
+
+                //计数的函数，参数为每一个Li对应的下标（在函数里通过下标去取到对应的Li）
+                function count(n) {
+                    //获取到对应li里的相关元素
+                    var btns = lis[n].querySelectorAll('button');
+                    var strong = lis[n].querySelector('strong');
+
+                    var num = 0; //对应选择到商品的数量
+                    //给+添加点击事件
+                    window.onload=function(){
+                        btns[1].onclick = function() {
+                            /*
+                             * 1、商品的数量要累加
+                             * 2、小计的值也要累加
+                             * 3、改变下面p标签里的内容
+                             */
+                            num++;
+                            strong.innerHTML = num;
+                            sum(); //第三件事情
+                        }}
+
+                    //给-添加点击事件
+                    window.onload=function(){btns[0].onclick = function() {
+                        /*
+                         * 1、商品的数量要累加
+                         * 2、小计的值也要累加
+                         * 3、改变下面p标签里的内容
+                         */
+                        num--;
+                        /*
+                         * 减到0的时候就不能再减了
+                         */
+                        if(num < 0) {
+                            num = 0;
+                        }
+
+                        strong.innerHTML = num;
+                        span.innerHTML = num * parseFloat(em.innerHTML) + '元';
+
+                        sum(); //第三件事情
+                    };
+                    }
+                };
+
+                function sum() {
+                    /*
+                     * 这个函数里要做的事情
+                     * 1、修改共购买的数量
+                     * 2、算出最贵的
+                     * 3、算出一共多少钱
+                     */
+
+                    var buyNum = 0; //共购买的数量
+                    var expensive = 0; //最贵的单价
+                    var total = 0; //出一共多少钱
+
+                    for(var i = 0; i < lis.length; i++) {
+                        var strongInner = lis[i].querySelector('strong').innerHTML;
+                        var emInner = lis[i].querySelector('em').innerHTML;
+                        var spanInner = lis[i].querySelector('span').innerHTML;
+
+                        if(strongInner > 0) {
+                            /*
+                             * 要算最贵单价，前提是这个商品必需被购买了，也就是它对应的strongInner要大于0
+                             *
+                             */
+
+                            if(parseFloat(emInner) > expensive) {
+                                expensive = parseFloat(emInner);
+                            }
+                        }
+
+                        buyNum = buyNum + parseFloat(strongInner);
+                        total = total + parseFloat(spanInner);
+                    }
+
+                    p.innerHTML = '共购买了 <strong>' + buyNum + '</strong> 件商品，单价最贵是：<strong>' + expensive + '</strong>元，合计 <strong>' + total + '</strong> 元；';
+                }
+            };
+            $(document).ready(function(){
+                // 点击事件
+                $("#chose").click(function() {
+                    $(".buy").slideDown();
+                    $("#body").css("background-color", "#ffffff");
+                    $("#body").css("opacity", "0.5");
+
+
+                });
+                // 关闭
+                $("#close1").click(function() {
+                    $(".buy").hide();
+                    $("#body").css("background-color", "#ffffff");
+                    $("#body").css("opacity", "1");
+                });
+            })
+            $().ready(function() {
+
+                $("#btns").click(function() {
+                    $(".rr").hide();
+                })
+                $("#btns2").click(function() {
+                    $(".zcxs").hide();
+                })
+
+            })
+            $().ready(function() {
+
+                $("#btnp1").click(function() {
+                    $(".chose_b").hide();
+                    $(".chose_noll").show();
+                })
+
+            });
+
+            function OpenDiv(){
+
+                document.getElementById("div1").style.display="block";
+
+                document.getElementById("open").style.display="block";
+
+            };
+            // 给div层中的关闭添加onclick事件：
+            function CloseDiv(){
+
+                document.getElementById("div1").style.display="none";
+
+                document.getElementById("open").style.display="block";
+
+            };
+        </script>
+    </body>
+</html>

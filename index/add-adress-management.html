@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<!--+++++++++++-->
+<!-- 22-收货地址管理   -->
+<!--响应和编辑功能-->
+<!--+++++++++++-->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>地址管理</title>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <!--导入css-->
+    <link type="text/css" href="../static/css/order.css" rel="stylesheet" />
+    <link type="text/css" href="../static/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../static/iconfont/iconfont.css">
+    <link rel="stylesheet" href="../static/css/address.css">
+</head>
+<body style="background-color: #F1F2F4;">
+<section class="aui-flexView">
+    <!-- 标题 返回按键   -->
+    <header class="aui-navBar aui-navBar-fixed">
+        <a href="javascript:history.go(-1)" class="aui-navBar-item">
+            <i class="iconfont2 icon-fanhui1"></i>
+        </a>
+        <div class="aui-center">
+            <span class="aui-center-title">地址管理</span>
+        </div>
+    </header>
+    <!--内容部分-->
+    <section class="aui-scrollView">
+        <div class="aui-tab" data-ydui-tab>
+            <div class="add-adress">
+                <div id="address-box1" class="add-adress-in">
+                    <div class="add-first-text" >
+                        <p class="add-first-type">姓名</p>
+                        <p id="username" class="add-first-name" >151515151</p>
+                    </div>
+
+                    <div class="add-first-this2">
+                        <p id="useraddress" class="add-first-type2">地址地址地址地址地址地地址地址地址地地址地址地址地地址地址地址地地址地址地址</p>
+                    </div>
+                    <div class="add-second-new">
+                        <input type="radio"style="width: 7%;margin:5px 10px 0 0"/>
+                        <p  style="width: 40%;">设为默认</p>
+                        <div class="toggle-button-wrapper button-add-new" >
+                            <a ><img src="../static/picture/dzgl-bj.png" width=22px" height="22px">
+                                <p >编辑</p>
+                            </a>
+                            <a onclick="javascript:delblock();" id="del"><img src="../static/picture/dzgl-sc.png" width=22px" height="22px" >
+                                <p >删除</p>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!--是否删除地址弹出框-->
+
+                    <div class="address-delete" id="address-delete">
+                        <div class="address-delete-in">
+                            <div class ="address-delete-text">您可以选择</div>
+                            <div class ="address-delete-button">
+                                <div class="delete-button-q" onclick="javascript:CloseDiv();">取消</div>
+                                <div id="del-box-button" class="delete-button-s">删除地址</div>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="save-address-s-new">
+                    <a href=""><div class="save-address-new">确认为收货地址</div></a>
+                    <a href="add-adress.html"><div class="save-address-add">+ 新增收货地址</div></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</section>
+<script type="text/javascript" src="../static/js/jquery.min.js"></script>
+<script type="text/javascript" src="../static/js/tab.js"></script>
+<script>
+    function delblock(){
+        document.getElementById("address-delete").style.display="block";
+        document.getElementById("del").style.display="inline-flex";
+    };
+    // 给div层中的关闭添加onclick事件：
+    function CloseDiv(){
+        document.getElementById("address-delete").style.display="none";
+        document.getElementById("del").style.display="inline-flex";
+
+    };
+    // 删除元素
+    $(document).ready(function(){
+        $("#del-box-button").click(function(){
+            $("#address-box1").remove();
+            $("#address-delete").remove();
+        });
+    });
+</script>
+</body>
+</html>

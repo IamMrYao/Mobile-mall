@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<!--+++++++++++-->
+<!-- 21 新增收货地址管理  √-->
+<!--+++++++++++-->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>添加收货地址</title>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <!--导入css-->
+    <link type="text/css" href="../static/css/order.css" rel="stylesheet" />
+    <link type="text/css" href="../static/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../static/iconfont/iconfont.css">
+    <link rel="stylesheet" href="../static/css/address.css">
+</head>
+<body style="background-color: #F1F2F4;">
+<section class="aui-flexView">
+    <!-- 标题 返回按键   -->
+    <header class="aui-navBar aui-navBar-fixed">
+        <a href="javascript:history.go(-1)" class="aui-navBar-item">
+            <i class="iconfont2 icon-fanhui1"></i>
+        </a>
+        <div class="aui-center">
+            <span class="aui-center-title">添加收货地址</span>
+        </div>
+    </header>
+    <!--内容部分-->
+    <section class="aui-scrollView">
+        <div class="aui-tab" data-ydui-tab>
+            <div class="add-adress">
+                <div class="add-first">
+                    <p>收货人：</p>
+                    <input maxlength="20" type="text" name="truename" class="o_man" placeholder="真实姓名（必填）" value="">
+                </div>
+                <div class="divHeight-s"></div>
+                <div class="add-first">
+                    <p>联系号码：</p>
+                    <input type="tel" name="mobiletel" id="n_mobiletel" class="o_number" maxlength="11" placeholder="手机号码（必填）" value="">
+
+                </div>
+                <div class="divHeight-s"></div>
+               <div class="add-first">
+                    <p>所在地区:</p>
+                    <input type="text" id="code" name="code" class="o_yz" placeholder="" maxlength="6">
+                </div>
+                <div class="divHeight-s"></div>
+                <div class="add-first" style="height: 100px">
+                    <p>详细地址:</p>
+                    <textarea  type="text" id="gps" name="gps" style="border:0;overflow:hidden;margin-right: 20%"></textarea>
+                </div>
+                <div class="divHeight"></div>
+                <div class="add-second">
+                    <p>设为默认地址</p>
+                    <div class="toggle-button-wrapper button-add">
+                        <input type="checkbox" id="toggle-button" name="switch">
+                        <label for="toggle-button" class="button-label">
+                            <span class="circle"></span>
+                            <span class="text on"></span>
+                            <span class="text off"></span>
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+            <div class="save-address-s">
+                <div class="save-address">保存收货地址</div>
+            </div>
+
+        </div>
+    </section>
+</section>
+<script type="text/javascript" src="../static/js/jquery.min.js"></script>
+<script type="text/javascript" src="../static/js/tab.js"></script>
+</body>
+</html>

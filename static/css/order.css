@@ -1,0 +1,617 @@
+﻿/*
+
+* 订单页面
+
+*/
+
+.body{
+    background-color: #F1F2F4;
+}
+.clearfix::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix {
+}
+
+/*!* 必要布局样式css *!*/
+/*.aui-flexView {*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*margin: 0 auto;*/
+    /*display: -webkit-box;*/
+    /*display: -webkit-flex;*/
+    /*display: -ms-flexbox;*/
+    /*display: flex;*/
+    /*-webkit-box-orient: vertical;*/
+    /*-webkit-box-direction: normal;*/
+    /*-webkit-flex-direction: column;*/
+    /*-ms-flex-direction: column;*/
+    /*flex-direction: column;*/
+/*}*/
+
+.aui-scrollView {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    /* margin-top: -44px; */
+    /*为了订单页面改的*/
+    margin-top:1%;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+    border: none;
+    float: left;
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+.icon-sys {
+    background-image: url("data:image/png;base64,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");
+}
+
+.tab-nav {
+    background: #fff;
+    height: 40px;
+    line-height: 40px;
+    /* border-radius: 80px; */
+    display: block;
+    /* margin: 0 auto; */
+    position: relative;
+    /* width: 185px; */
+}
+
+.tab-nav:after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #bbbbbb;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+}
+
+.tab-nav-item.tab-active a {
+    color: #f11d1c;
+    font-weight: 400;
+
+}
+
+.tab-nav-item a {
+    display: inherit;
+    font-size: 15px;
+
+}
+/*适合订单支付页面用*/
+
+
+
+
+
+.tab-panel {
+    position: relative;
+    overflow: hidden;
+    margin-top: 0%;
+}
+/*我的订单页面*/
+.tab-panel2 {
+    position: relative;
+    overflow: hidden;
+    margin-top: 10%;
+}
+.tab-panel-next{
+    background-color:#f1f2f3;
+}
+
+.tab-panel .tab-panel-item {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    /*margin-left: 10px;*/
+    background-color: #f1f2f3;
+}
+/*订单详情*/
+.tab-nav-item {
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    color: #585858;
+    font-size: 0.9rem;
+    display: block;
+    float: left;
+    border-radius: 80px;
+    padding: 0;
+    width:20%;
+    margin: 0 auto;
+}
+/*待消费选择栏 下划线样式*/
+.tab-nav-item.tab-active:before {
+    content: '';
+    width: 30%;
+    height: 0px;
+    position: absolute;
+    left: 55%;
+    bottom: 0;
+    margin-left: -20%;
+    z-index: 4;
+    background-color: #f11d1c;
+    border-radius: 120px;
+    border: 1px solid #f11d1c;
+}
+
+
+.tab-panel .tab-panel-item.tab-active ~ .tab-panel-item {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.tab-panel .tab-panel-item.tab-active {
+    position: relative;
+    -webkit-transition: -webkit-transform .15s;
+    transition: -webkit-transform .15s;
+    transition: transform .15s;
+    transition: transform .15s, -webkit-transform .15s;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+/*分割栏*/
+.divHeight {
+    background: #f0f2f5;
+    width: 100%;
+    height: 10px;
+}
+.divHeight-xu {
+    width:86%;
+    margin: 0 auto 0 12%;
+    height: 1px;
+    border: 1px dashed #F1F2F4;
+}
+.divHeight-s-long {
+    background: #f0f2f5;
+    width:100%;
+    height: 1px;
+}
+.divHeight-s {
+    background: #f0f2f5;
+    width: 80%;
+    height: 1px;
+}
+/*每组上下间距*/
+.aui-well-item {
+    text-align: left;
+    padding: 10px 15px 5px 10px;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.aui-well-item-hd {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    line-height: 19px;
+    text-align: center;
+}
+.aui-well-item-hd2 {
+    margin-right: .4em;
+    width: 22px;
+    height: 21px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.aui-well-item-hd img {
+    width: 100%;
+    max-height: 100%;
+    vertical-align: top;
+    display: block;
+    border: none;
+
+}
+
+.aui-well-item-bd {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    min-width: 0;
+}
+
+.aui-well-item-bd h3 {
+    color: #333;
+    font-size: 16px;
+    position: relative;
+    /* padding-left: 20px; */
+    font-weight: normal;
+    padding-bottom: 0;
+    text-align: left;
+}
+/*待消费样式*/
+.aui-well-item-fr {
+    font-size: 0.85rem;
+    text-align: right;
+    padding-right: 4px;
+    position: relative;
+}
+/*订单小图边框控制*/
+.tab-item{
+    background-color: #fff;
+    margin:0 10px 0 10px;
+}
+
+/*.auis-well-item-fr:after {*/
+    /*content: " ";*/
+    /*display: inline-block;*/
+    /*height: 18px;*/
+    /*width: 18px;*/
+    /*position: absolute;*/
+    /*top: 60%;*/
+    /*margin-top: -100px;*/
+    /*right: 0px;*/
+    /*border-radius: 2px;*/
+/*}*/
+/*一个块的中间样式控制 整个块的height控制*/
+.aui-mail-product {
+    background: #fff;
+    padding: 10px 10px 10px 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.aui-mail-product-item {
+     /*padding: 15px; */
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+
+}
+
+.aui-mail-product-item-hd {
+    margin-right: 10px;
+    width: 28%;
+    line-height: 70px;
+    text-align: center;
+}
+
+.aui-mail-product-item-hd img {
+    width: 100%;
+    max-height: 100%;
+    vertical-align: top;
+}
+.aui-mail-product-item-bd {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 2;
+    min-width: 0;
+    font-size:15px;
+    font-weight: 600;
+}
+.aui-mail-product-item-sd {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 2;
+    padding-right: 8px;
+}
+.aui-mail-product-item-top{
+    font-size: 13px;
+    text-align: right;
+    font-weight: 600;
+    color: #000000;
+    padding:6px 0px 5px 10px;
+}
+/*.aui-well-item-fr {*/
+    /*font-size: 0.85rem;*/
+    /*text-align: right;*/
+    /*color:#f11d1c;*/
+    /*padding-right: 6px;*/
+    /*position: relative;*/
+/*}*/
+.aui-mail-product-item-button{
+    font-size: 12px;
+    text-align: right;
+    padding-top:30px;
+
+}
+.aui-mail-product-item-bd p {
+    color: #404040;
+    font-size: 13px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+.aui-mail-payment {
+    padding: 10px 15px;
+    position: relative;
+    text-align: right;
+    font-size: 0.8rem;
+    color: #333;
+    overflow: hidden;
+    display: block;
+}
+
+.aui-mail-payment p em {
+    font-style: normal;
+}
+
+.aui-mail-payment p i {
+    font-size: 1.3rem;
+    font-style: normal;
+}
+
+.aui-mail-payment:after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #e2e2e2;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+}
+
+.aui-mail-text{
+    padding: 10px 10px 10px 0;
+    overflow: hidden;
+    display: inline-flex;
+}
+
+/*未付款用*/
+.aui-mail-text2{
+    padding: 10px 10px 10px 0;
+    overflow: hidden;
+    display: inline-flex;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+.aui-mail-text-bold{
+    background: none;
+    font-size: 0.8rem;
+
+    color: #000000;
+
+    padding: 0px 10px;
+    display: inline-block;
+    float: left;
+    margin-left: 9px;
+}
+.pay{
+    color: #f11d1c;
+    position: absolute;
+    right: 5%;
+    padding: 5px 24px;
+    border-radius: 20px;
+    border: 1px solid #f11d1c;
+}
+.order-footer-pay{
+    color: #f11d1c;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 1px solid #f11d1c;
+    position: absolute;
+    top:92%;
+    right: 5%;
+}
+.cancel{
+    margin:0 0 0 50%;
+    padding: 5px 15px;
+    border: 1px solid #F1F2F4;
+    border-radius: 20px;
+}
+.order-footer-cancel{
+    padding: 5px 15px;
+    border: 1px solid #F1F2F4;
+    border-radius: 20px;
+    position: absolute;
+    top:92%;
+    right:32%;
+}
+/*我的订单电子券码数字样式*/
+.aui-mail-text-light{
+    background: none;
+    font-size: 0.9rem;
+    display: block;
+    /*两个class的距离*/
+    padding: 0px 0px;
+    display: inline-block;
+    float: left;
+    margin-left: 9px;
+    color: #999999;
+}
+/*我的订单电子券码划线数字样式 已完成的*/
+.order-cod-over{
+    text-decoration:line-through;
+
+}
+.aui-mail-text-tui{
+    position: absolute;
+    right: 8%;
+    padding: 2px 20px;
+    font-size:13px;
+}
+
+.aui-mail-text .aui-df-color {
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.aui-well-wait {
+    text-align: right;
+    color: #f0250f;
+    font-size: 0.8rem;
+}
+.aui-mail-product-left-button{
+
+    display: inline-flex;
+    padding-top: 10px;
+
+}
+/*订单图中间文字样式*/
+.aui-mail-product-left{
+    width: 45%;
+    padding-top:6px;
+    padding-right:6px;
+    margin-left: 5px;
+}
+/*订单详情页面专用*//*订单图中间文字样式*/
+.aui-mail-product-left-old{
+    width: 45%;
+    padding-top:6px;
+    padding-right:6px;
+    margin-left: 20px;
+}
+.goods-font{
+    font-size:12px;
+    color:#72787c;
+}
+/*
+*       无相关订单图片调整
+*/
+.tab-panel-img{
+    text-align: center;
+}
+/*没有相关订单文字*/
+.tab-panel-img p{
+    font-style: normal;
+    font-size: 16px;
+    font-family:Helvetica;
+    margin-top: 30px;
+    color: #000;
+}
+
+/*无相关订单图片调整*/
+.aui-flex-img{
+    width: 50%;
+    padding-top: 90px;
+}
+
+/*
+**
+**  订单详情部分
+**
+*/
+/*块的中间样式控制 整个块的height控制*/
+.details-goods-top {
+    background: #fff;
+    padding: 10px 0px 10px 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+/*详情订单小图边框控制*/
+.details-goods-margin{
+    background-color: #fff;
+    margin:0 10px 0 10px;
+}
+/*详情图片大小位置*/
+.details-goods-pic {
+    width: 60px;
+    /*line-height: 70px;*/
+}
+
+.details-goods-pic img {
+margin: 10px 10px 10px 10px ;
+    width: 100%;
+    max-height: 100%;
+    vertical-align: top;
+}
+.details-goods-title{
+    padding: 5px 20px 0px -10px;
+}
+.ticket-code{
+    display: inline-flex;
+    padding:5px 0 10px 12px;
+}
+.ticket-code img{
+    width:100%;
+}
+.xuxian{
+    border:1px #000 dotted;
+}/*#000000表示白色，边框宽度为一个像素，边框线型为虚线*/
+
+.ticket-code-use{
+    padding:10px 0 10px 30px;
+}
+/*商家信息*/
+.shop-info {
+    display: block;
+    display: inline-flex;
+
+}
+.shop-info-top{
+    width: 60%;
+}
+
+.shop-name{
+    float: top;
+}
+.shop-info-buttom{
+    margin-left:110px ;
+
+    /*padding-left: 10px;*/
+}
+.shop-info-buttom img{
+    width: 22px;
+    height: 22px;
+}
+.order-table{
+    margin-left: 30px;
+    border-spacing:0px 14px;
+}
+/*td间距*/
+
+/*订单详情页面专用*/
+.aui-mail-text3{
+
+    padding: 10px 10px 10px 0;
+    overflow: hidden;
+
+}
+
+/*底部*/
+.order-footer{
+    width: 100%;
+}
+.order-footer-in{
+    display: inline-flex;
+    width: 100%;
+    height: 10%;
+    padding:8% 22px 5%  22px;
+
+
+}

@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<!--++++++++++++++++++++++++++-->
+<!--设计图:7-分类进入的-商品列表-->
+<!--++++++++++++++++++++++++++-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>商品列表</title>
+        <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport"/>
+        <meta content="yes" name="apple-mobile-web-app-capable"/>
+        <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+        <meta content="telephone=no" name="format-detection"/>
+        <!--导入css-->
+        <link type="text/css" href="../static/css/store-good-list.css" rel="stylesheet" />
+        <link type="text/css" href="../static/css/style.css" rel="stylesheet" />
+        <link type="text/css" href="../static/css/shop.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../static/iconfont/iconfont.css">
+    </head>
+    <body style="background-color: #F1F2F4;">
+        <section class="aui-flexView">
+            <!-- 标题 返回按键   -->
+            <header class="aui-navBar aui-navBar-fixed">
+                <a href="javascript:history.go(-1)" class="aui-navBar-item">
+                    <i class="iconfont2 icon-fanhui1"></i>
+                </a>
+                <div class="aui-center">
+                    <span class="aui-center-title">商品列表</span>
+                </div>
+            </header>
+            <!--内容部分-->
+            <section class="aui-scrollView">
+                <div class="aui-tab" data-ydui-tab>
+                    <ul class="tab-nav">
+                        <div class="tab-nav-item tab-active">
+                            <a href="javascript:;">进行中</a>
+                        </div>
+                        <div class="tab-nav-item" style="margin-right: 0%">
+                            <a href="javascript:;">往期</a>
+                        </div>
+
+                    </ul>
+                    <!--分割线-->
+                    <div class="divHeight-shop"></div>
+                    <div class="tab-panel">
+                        <div class="tab-panel-next">
+                            <!-- 进行中 class : tab-panel-item 切换效果js:tab.js第59行 -->
+                            <div class="tab-panel-item tab-active">
+                                <div class="srote-content">
+                                    <div class="srote-content-next">
+                                        <div class="details-goods-margin">
+                                            <div class="srote-introduce">
+                                                <!--商品图片-->
+                                                <div class="introduce1-pic">
+                                                    <img src="  ../static/picture/store1.png" alt="" width="100%">
+                                                </div>
+                                                <div class="introduce1-other">
+                                                    <!--商品名-->
+                                                    <div class="introduce1-text">
+                                                        <p>58元秒杀【星城烤吧】2-3人烧烤套餐</p>
+                                                    </div>
+                                                    <div class="introduce1-gps">
+                                                        <img src="../static/picture/dp-dw.png" width="20%" height="19%" />
+                                                        <div class="introduce1-gps-new"><p>2.35</p>km</div>
+
+                                                    </div>
+
+                                                    <div class="goods-price">
+                                                        <!--抢购价格，id= store-details-price  -->
+                                                        <div class="goods-price-left "> <a href="javascript:;">￥<span id="store-details-price" >58</span></a></div>
+                                                        <div class=" goods-price-right"> <p>立即抢购</p>  </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="divHeight"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-panel-item">
+                            <!--往期-->
+                                <div class="tab-item">
+                                    <div class="srote-content">
+                                        <div class="srote-content-next">
+                                            <div class="details-goods-margin">
+                                                <div class="srote-introduce">
+                                                    <!--商品图片-->
+                                                    <div class="introduce1-pic">
+                                                        <img src="  ../static/picture/store1.png" alt="" width="100%">
+                                                    </div>
+                                                    <div class="introduce1-other">
+                                                        <!--商品名-->
+                                                        <div class="introduce1-text">
+                                                            <p>58元秒杀【星城烤吧】2-3人烧烤套餐</p>
+                                                        </div>
+                                                        <div class="introduce1-gps">
+                                                            <img src="../static/picture/dp-dw.png" width="20%" height="19%" />
+                                                            <div class="introduce1-gps-new"><p>2.35</p>km</div>
+
+                                                        </div>
+
+                                                        <div class="goods-price">
+                                                            <!--抢购价格，id= store-details-price  -->
+                                                            <div class="goods-price-left "> <a href="javascript:;">￥<span id="store-details-price" >58</span></a></div>
+                                                            <div class=" goods-price-right"> <p>立即抢购</p>  </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="divHeight"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <script type="text/javascript" src="../static/js/jquery.min.js"></script>
+        <script type="text/javascript" src="../static/js/tab.js"></script>
+    </body>
+</html>

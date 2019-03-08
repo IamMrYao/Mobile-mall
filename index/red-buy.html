@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<!--+++++++++++-->
+<!-- 6-商家商城购买红包 √ 顶部不跟随× -->
+<!--+++++++++++-->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>商家商城</title>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <!--导入css-->
+    <link type="text/css" href="../static/css/style.css" rel="stylesheet" />
+    <link type="text/css" href="../static/css/red.css" rel="stylesheet" />
+    <!--<link type="text/css" href="../static/css/style.css" rel="stylesheet" />-->
+    <link rel="stylesheet" href="../static/iconfont/iconfont.css">
+</head>
+<body style="background-color: #F9dbd4;">
+<section class="aui-flexView2">
+    <!-- 标题 返回按键   -->
+    <header class="aui-navBar2 aui-navBar-fixed">
+        <div class="aui-left2">
+            <a href="javascript:history.go(-1)" class="aui-navBar-item2">
+                <i class="iconfont2 icon-fanhui1"></i>
+            </a>
+        </div>
+
+        <div class="aui-center2">
+            <span class="aui-center-title2">商家商城</span>
+        </div>
+        <div class="aui-right2">
+            <span class="aui-center-title3">我的红包</span>
+        </div>
+    </header>
+    <!--内容部分-->
+    <section class="aui-scrollView">
+        <div class="aui-tab" data-ydui-tab>
+
+            <!--分割线-->
+
+            <!--待消费栏 模块-->
+            <div class="tab-panel">
+                <div class="tab-panel-next">
+                    <!-- 待消费订单模块 class : tab-panel-item 切换效果js:tab.js第59行 -->
+                    <div class="tab-panel-item tab-active">
+                        <div class="tab-item">
+                            <!--1级别红包-->
+                            <div class="aui-mail-product">
+                                <a href="javascript:;" class="news-block-item">
+                                    <!--商品图片-->
+                                    <div class="news-block-item-left">
+                                        <img src="../static/picture/store-red1.png"  alt="" style="border-radius: 5px">
+                                    </div>
+
+                                    <div class="news-block-item-right">
+                                        <div class="item-right-top">
+                                            <!--商品名-->
+                                            <div class="item-right-top-succeed">
+                                                <p>1级店铺红包 最大金额50</p>
+                                            </div>
+
+                                        </div>
+
+                                        <!-- 商品价格 -->
+                                        <div class="item-right-buttom">
+                                            <div class="item-right-buttem-l">
+                                                <div class="aui-mail-product-item-top goods-font"><li id="news-content3">•消费100可用</li></div>
+                                                <div class="aui-mail-product-item-top goods-font"><li id="news-content4">•10个装</li></div>
+                                                <div class="aui-mail-product-item-top goods-font"><li id="news-content5">•1年使用期限</li></div>
+                                            </div>
+                                            <div class="item-right-buttem-r">
+                                                <div class="item-right-p">￥<p>50</p></div>
+                                                <div id="buy1" class="item-right-b" onclick="javascript:OpenDiv();" >购买</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--2级-->
+                            <div class="aui-mail-product">
+                                <a href="javascript:;" class="news-block-item">
+                                    <!--商品图片-->
+                                    <div class="news-block-item-left">
+                                        <img src="../static/picture/store-red2.png" alt="" style="border-radius: 5px">
+                                    </div>
+
+                                    <div class="news-block-item-right">
+                                        <div class="item-right-top">
+                                            <!--商品名-->
+                                            <div class="item-right-top-succeed">
+                                                <p>2级店铺红包 最大金额20</p>
+                                            </div>
+
+                                        </div>
+
+                                        <!-- 商品价格 -->
+                                        <div class="item-right-buttom">
+                                            <div class="item-right-buttem-l">
+                                                <div class="aui-mail-product-item-top goods-font"><li id="news-content3">•消费50可用</li></div>
+                                                <div class="aui-mail-product-item-top goods-font"><li id="news-content4">•10个装</li></div>
+                                                <div class="aui-mail-product-item-top goods-font"><li id="news-content5">•1年使用期限</li></div>
+                                            </div>
+                                            <div class="item-right-buttem-r">
+                                                <div class="item-right-p">￥<p>50</p></div>
+                                                <div id="buy2" class="item-right-b" onclick="javascript:OpenDiv();" >购买</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--3级-->
+                            <div class="aui-mail-product">
+                                <a href="javascript:;" class="news-block-item">
+                                    <!--商品图片-->
+                                    <div class="news-block-item-left">
+                                        <img src="../static/picture/store-red3.png" alt="" style="border-radius: 5px">
+                                    </div>
+
+                                    <div class="news-block-item-right">
+                                        <div class="item-right-top">
+                                            <!--商品名-->
+                                            <div class="item-right-top-succeed">
+                                                <p>3级店铺红包 最大金额20</p>
+                                            </div>
+
+                                        </div>
+                                        <!-- 商品价格 -->
+                                        <div class="item-right-buttom">
+                                            <div class="item-right-buttem-l">
+                                                <div class="aui-mail-product-item-top goods-font"><li >•消费50可用</li></div>
+                                                <div class="aui-mail-product-item-top goods-font"><li >•10个装</li></div>
+                                                <div class="aui-mail-product-item-top goods-font"><li >•1年使用期限</li></div>
+                                            </div>
+                                            <div class="item-right-buttem-r">
+                                                <div class="item-right-p">￥<p>50</p></div>
+                                                <div id="buy3" class="item-right-b" onclick="javascript:OpenDiv();" >购买</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--3级-->
+                            <div class="aui-mail-product">
+                                <a href="javascript:;" class="news-block-item">
+                                    <!--商品图片-->
+                                    <div class="news-block-item-left">
+                                        <img src="../static/picture/store-red4.png" alt="" style="border-radius: 5px">
+                                    </div>
+
+                                    <div class="news-block-item-right">
+                                        <div class="item-right-top">
+                                            <!--商品名-->
+                                            <div class="item-right-top-succeed">
+                                                <p>4级店铺红包 最大金额20</p>
+                                            </div>
+
+                                        </div>
+                                        <!-- 商品价格 -->
+                                        <div class="item-right-buttom">
+                                            <div class="item-right-buttem-l">
+                                                <div class="aui-mail-product-item-top goods-font"><li >•消费50可用</li></div>
+                                                <div class="aui-mail-product-item-top goods-font"><li >•10个装</li></div>
+                                                <div class="aui-mail-product-item-top goods-font"><li >•1年使用期限</li></div>
+                                            </div>
+                                            <div class="item-right-buttem-r">
+                                                <div class="item-right-p">￥<p>50</p></div>
+                                                <div id="buy4" class="item-right-b" onclick="javascript:OpenDiv();" >购买</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--3级-->
+                            <div class="aui-mail-product">
+                                <a href="javascript:;" class="news-block-item">
+                                    <!--商品图片-->
+                                    <div class="news-block-item-left">
+                                        <img src="../static/picture/store-red5.png" alt="" style="border-radius: 5px">
+                                    </div>
+
+                                    <div class="news-block-item-right">
+                                        <div class="item-right-top">
+                                            <!--商品名-->
+                                            <div class="item-right-top-succeed">
+                                                <p>5级店铺红包 最大金额20</p>
+                                            </div>
+
+                                        </div>
+                                        <!-- 商品价格 -->
+                                        <div class="item-right-buttom">
+                                            <div class="item-right-buttem-l">
+                                                <div class="aui-mail-product-item-top goods-font"><li >•消费50可用</li></div>
+                                                <div class="aui-mail-product-item-top goods-font"><li >•10个装</li></div>
+                                                <div class="aui-mail-product-item-top goods-font"><li >•1年使用期限</li></div>
+                                            </div>
+                                            <div class="item-right-buttem-r">
+                                                <div class="item-right-p">￥<p>50</p></div>
+                                                <div id="buy5" class="item-right-b" onclick="javascript:OpenDiv();" >购买</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--购买红包弹窗点击发送按钮弹出框-->
+                            <div class="buy-red" id="buy-red">
+                                <div class="buy-red-in">
+                                    <div class="send-in">
+                                        <div class="send-tit">
+                                            购买红包<p>1</p>级
+                                        </div>
+                                        <!--发送红包弹出框 -->
+                                        <div class="send-center">
+                                            <div class=" shuliang">
+                                                <ul style="list-style-type: none;">
+                                                    <li>
+                                                        <button style="font-size:22px;" >-</button>
+                                                        <!--弹出框中间按钮样式和大小 位置-->
+                                                        <button style="width:100px;font-size:21px;font-weight:600;margin: 0 -6px" > 1 </button>
+                                                        <button style="font-size:22px;">+</button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!--弹出框下方按钮样式 确定：send-true（文字白色 背景红色）；取消：send-true（文字黑色 背景白色）-->
+                                        <div class="send-button">
+                                            <div class="send-false"  onclick="javascript:CloseDiv();" id="close">取消</div>
+                                            <div class="send-true"  onclick="javascript:CloseDiv();" id="sure">确定</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<script type="text/javascript" src="../static/js/jquery.min.js"></script>
+<script type="text/javascript" src="../static/js/tab.js"></script>
+<script>
+    function OpenDiv(){
+        document.getElementById("buy-red").style.display="block";
+        document.getElementById("open").style.display="block";
+    };
+    // 给div层中的关闭添加onclick事件：
+    function CloseDiv(){
+
+        document.getElementById("buy-red").style.display="none";
+
+        document.getElementById("open").style.display="block";
+
+    };
+</script>
+</body>
+</html>

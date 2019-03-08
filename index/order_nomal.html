@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<!--+++++++++++++++-->
+<!--24 还没有相关订单页-->
+<!--+++++++++++++++-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>我的订单</title>
+        <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport"/>
+        <meta content="yes" name="apple-mobile-web-app-capable"/>
+        <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+        <meta content="telephone=no" name="format-detection"/>
+        <link href="../static/css/order.css" rel="stylesheet" type="text/css"/>
+        <link href="../static/css/style.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="../static/iconfont/iconfont.css">
+    </head>
+    <body style="background-color: #F1F2F4;">
+        <section class="aui-flexView">
+            <!-- 标题 返回按键   -->
+            <header class="aui-navBar aui-navBar-fixed">
+                <a href="javascript:history.go(-1)" class="aui-navBar-item">
+                    <i class="iconfont2 icon-fanhui1"></i>
+                </a>
+                <div class="aui-center">
+                    <span class="aui-center-title">我的订单</span>
+                </div>
+            </header>
+            <!--内容部分-->
+            <section class="aui-scrollView">
+                <div class="aui-tab" data-ydui-tab>
+                    <ul class="tab-nav">
+                        <li class="tab-nav-item tab-active">
+                            <a href="javascript:;">待消费</a>
+                        </li>
+                        <li class="tab-nav-item">
+                            <a href="javascript:;">已完成</a>
+                        </li>
+
+                    </ul>
+
+
+                    <div class="tab-panel">
+                        <div class="tab-panel-next">
+                            <!--  无相关订单(默认)  -->
+                            <div class="tab-panel-item tab-active">
+                                <a href="javascript:;" class="aui-flex">
+                                    <div class="tab-panel-img ">
+                                        <img class="aui-flex-img" src="../static/picture/tab-none.png">
+                                        <p>还没有相关的订单呢</p>
+                                    </div>
+                                </a>
+                                <!--  无相关订单  -->
+
+                            </div>
+                            <div class="divHeight"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <script type="text/javascript" src="../static/js/jquery.min.js"></script>
+        <script type="text/javascript" src="../static/js/tab.js"></script>
+    </body>
+</html>

@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<!--+++++++++++-->
+<!-- 26-订单详情  √-->
+<!--+++++++++++-->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>订单详情</title>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <!--导入css-->
+    <link type="text/css" href="../static/css/order.css" rel="stylesheet" />
+    <link type="text/css" href="../static/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../static/iconfont/iconfont.css">
+</head>
+<body style="background-color: #F1F2F4;">
+<section class="aui-flexView">
+    <!-- 标题 返回按键   -->
+    <header class="aui-navBar aui-navBar-fixed">
+        <a href="javascript:history.go(-1)" class="aui-navBar-item">
+            <i class="iconfont2 icon-fanhui1"></i>
+        </a>
+        <div class="aui-center">
+            <span class="aui-center-title">订单详情</span>
+        </div>
+    </header>
+    <!--内容部分-->
+    <section class="aui-scrollView">
+        <div class="aui-tab" data-ydui-tab>
+
+            <!--分割线-->
+            <div class="divHeight"></div>
+            <!--待消费栏 模块-->
+            <div class="tab-panel tab-panel2">
+                <div class="tab-panel-next">
+                    <!-- 待消费订单模块 class : tab-panel-item 切换效果js:tab.js第59行 -->
+                    <div class="tab-panel-item tab-active">
+                        <div class="details-goods-margin">
+
+                            <div class="details-goods-top">
+                                <a href="javascript:;" class="aui-mail-product-item">
+                                    <!--商品图片-->
+                                    <div class="details-goods-pic">
+                                        <img src="../static/picture/order_complet.png" alt="">
+                                    </div>
+                                    <div class="aui-mail-product-left-old">
+                                        <!--商品名-->
+                                        <div class="aui-mail-product-item-bd">
+                                            <p>88元抢原价100元老地方烤肉铺(南新街)代金券</p>
+                                        </div>
+                                        <div class="aui-mail-product-left-button goods-font">
+                                            <!--商品颜色、尺寸显示-->
+                                            <p class="goods-spec">颜色：</p>
+                                            <p class="goods-color">白色</p>
+                                            <p class="goods-spec" style="margin-left: 5px">尺码：</p>
+                                            <p class="goods-size">M </p>
+                                        </div>
+                                    </div>
+                                    <!-- 商品价格 -->
+                                    <div class="aui-mail-product-item-sd">
+                                        <div class="aui-mail-product-item-top">￥<span>53.90</span></div>
+                                        <div class="aui-mail-product-item-button goods-font">x1</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="divHeight"></div>
+                            <div class="aui-mail-text3">
+                                <!--电子券码详情-->
+                                <div class="ticket-code">
+                                    <a href="javascript:;" class="aui-well-item-hd2 ">
+                                    <img  src="../static/picture/ddxq-dz1.png" />
+                                    </a>
+                                        <a class="aui-well-item-bd" href="javascript:;"><h3>电子券码</h3></a>
+
+                                </div>
+                                <div class="divHeight-xu"></div>
+                                <div class="ticket-code-use">
+                                    <a class="aui-mail-text-light font-gray" href="javascript:;">0800 00347 0342</a>
+                                    <div class=" aui-well-item-fr font-gray"> 待使用  </div>
+                                </div>
+
+                            </div>
+                            <div class="divHeight"></div>
+                            <div class="aui-mail-text3">
+                                <!--商家信息详情-->
+                                <div class="ticket-code">
+                                    <a href="javascript:;" class="aui-well-item-hd2 ">
+                                        <img  src="../static/picture/ddxq-sj.png" />
+                                    </a>
+                                    <a class="aui-well-item-bd" href="javascript:;"><h3>商家信息</h3></a>
+                                </div>
+                                <div class="divHeight-xu"></div>
+                                <!-- 商家信息 -->
+                                <div class="ticket-code-use shop-info">
+                                    <div class="shop-info-top">
+                                        <p class="shop-name" style="font-size: 15px">齐市一等牛肉店家庭烤肉店</p>
+                                        <p class=" shop-address font-gray" style="font-size: 13px;padding-top: 5px;">道里区故乡三道街10号</p>
+                                    </div>
+                                    <div class="shop-info-buttom">
+                                        <img src="../static/picture/ddxq-dd-2.png">
+                                    </div>
+                                    <!--<a class="aui-mail-text-light font-gray" href="javascript:;">0800 00347 0342</a>-->
+                                    <!--<div class="ticket-code-used aui-well-item-fr font-gray"> 已使用  </div>-->
+                                </div>
+
+                            </div>
+                            <div class="divHeight"></div>
+                            <div class="aui-mail-text3">
+                                <!--电子券码详情-->
+                                <div class="ticket-code">
+                                    <a href="javascript:;" class="aui-well-item-hd2 ">
+                                        <img  src="../static/picture/ddxq-dd.png" />
+                                    </a>
+                                    <a class="aui-well-item-bd" href="javascript:;"><h3>订单信息</h3></a>
+
+                                </div>
+                                <!--<div class="ticket-code-use">-->
+                                    <!--<a class="aui-mail-text-light font-gray" href="javascript:;">0800 00347 0342</a>-->
+                                    <!--<div class=" aui-well-item-fr font-gray"> 待使用  </div>-->
+                                    <!--&lt;!&ndash;!!ticket-code-used 未定义&ndash;&gt;-->
+                                <!--</div>-->
+
+                                <table class="order-table">
+                                    <tr>
+                                        <td class="font-gray">订&nbsp 单 &nbsp号:</td>
+                                        <td>1423453453</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-gray">手&nbsp 机 &nbsp号:</td>
+                                        <td>012752752</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-gray">付款时间:</td>
+                                        <td>2018-11-17 22:08</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-gray">下单时间:</td>
+                                        <td>2018-11-17 22:07</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-gray">数 &nbsp&nbsp &nbsp&nbsp 量:</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-gray ">总 &nbsp&nbsp &nbsp&nbsp 价:</td>
+                                        <td><p>￥ 128</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-gray">实 &nbsp&nbsp &nbsp&nbsp 付:</td>
+                                        <td>￥ 128</td>
+                                    </tr>
+                                </table>
+
+                            </div>
+                            <div class="divHeight"></div>
+
+                        </div>
+                        <div class="divHeight"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</section>
+<script type="text/javascript" src="../static/js/jquery.min.js"></script>
+<script type="text/javascript" src="../static/js/tab.js"></script>
+</body>
+</html>

@@ -1,0 +1,327 @@
+﻿<!DOCTYPE html>
+<!--+++++++++++++++++++++++++++++-->
+<!--27-订单-已完成        √    -->
+<!--+++++++++++++++++++++++++++++-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>我的订单</title>
+        <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport"/>
+        <meta content="yes" name="apple-mobile-web-app-capable"/>
+        <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+        <meta content="telephone=no" name="format-detection"/>
+        <!--导入css-->
+        <link type="text/css" href="../static/css/order-mine.css" rel="stylesheet" />
+        <link type="text/css" href="../static/css/style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../static/iconfont/iconfont.css">
+    </head>
+    <body style="background-color: #F1F2F4;">
+        <section class="aui-flexView">
+            <!-- 标题 返回按键   -->
+            <header class="aui-navBar aui-navBar-fixed">
+                <a href="javascript:history.go(-1)" class="aui-navBar-item">
+                    <i class="iconfont2 icon-fanhui1"></i>
+                </a>
+                <div class="aui-center">
+                    <span class="aui-center-title">我的订单</span>
+                </div>
+            </header>
+            <!--内容部分-->
+            <section class="aui-scrollView">
+                <div class="aui-tab" data-ydui-tab>
+                    <ul class="tab-nav">
+                        <!--顶部导航栏切换  切换效果js:tab.js第59行 -->
+                        <li class="tab-nav-item tab-active">
+                            <a href="javascript:;">全部</a>
+                        </li>
+                        <li class="tab-nav-item ">
+                            <a href="javascript:;">待付款</a>
+                        </li>
+                        <li class="tab-nav-item">
+                            <a href="javascript:;">待使用</a>
+                        </li>
+                        <li class="tab-nav-item">
+                            <a href="javascript:;">待评价</a>
+                        </li>
+                        <li class="tab-nav-item">
+                            <a href="javascript:;">退款/售后</a>
+                        </li>
+
+
+                    </ul>
+                    <!--分割线-->
+                    <div class="divHeight"></div>
+
+                    <div class="tab-panel">
+                        <!-- 全部订单模块 class : tab-panel-item  添加tab-active 类,则为刷新后首先显示-->
+                        <div class="tab-panel-next">
+                            <div class="tab-panel-item tab-active">
+                                <div class="tab-item">
+                                    <a href="javascript:void(0);" class="aui-well-item aui-well-item-clear">
+                                        <div class="aui-well-item-hd">
+                                            <img src="../static/picture/wd-qgdp.png" alt="">
+                                        </div>
+                                        <div class="aui-well-item-bd">
+                                            <!--店铺名-->
+                                            <h3>露柔旗舰店</h3>
+                                        </div>
+                                        <span class="aui-well-item-fr font-red">已评价</span>
+                                    </a>
+                                    <div class="aui-mail-product">
+                                        <a href="javascript:;" class="aui-mail-product-item">
+                                            <!--商品图片-->
+                                            <div class="aui-mail-product-item-hd">
+                                                <img src="../static/picture/order_complet.png" alt="">
+                                            </div>
+                                            <div class="aui-mail-product-left">
+                                                <!--商品名-->
+                                                <div class="aui-mail-product-item-bd">
+                                                    <p>88元抢原价100元老地方烤肉铺(南新街)代金券</p>
+                                                </div>
+                                                <div class="aui-mail-product-left-button goods-font">
+                                                    <!--商品颜色、尺寸显示-->
+                                                    <p class="goods-spec">颜色：</p>
+                                                    <p class="goods-color">白色</p>
+                                                    <p class="goods-spec" style="margin-left: 5px">尺码：</p>
+                                                    <p class="goods-size">M </p>
+                                                </div>
+                                            </div>
+                                            <!-- 商品价格 -->
+                                            <div class="aui-mail-product-item-sd">
+                                                <div class="aui-mail-product-item-top">￥<span>53.90</span></div>
+                                                <div class="aui-mail-product-item-button goods-font">x1</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!--<div class="divHeight-s"></div>-->
+                                    <!--<div class="aui-mail-text">-->
+                                        <!--&lt;!&ndash;电子券码&ndash;&gt;-->
+                                        <!--<a class="aui-mail-text-bold" href="javascript:;">电子券码</a>-->
+                                        <!--<a class="aui-mail-text-light" href="javascript:;">0800 00347 0342</a>-->
+
+                                    <!--</div>-->
+                                </div>
+                                <div class="divHeight"></div>
+                            </div>
+                        </div>
+                        <!-- 待消费订单模块 class : tab-panel-item  添加tab-active 类,则为刷新后首先显示-->
+                        <div class="tab-panel-item">
+
+                            <div class="tab-item">
+                                <a href="javascript:void(0);" class="aui-well-item ">
+                                    <div class="aui-well-item-hd">
+                                        <img src="../static/picture/wd-qgdp.png" alt="">
+                                    </div>
+                                    <div class="aui-well-item-bd">
+                                        <h3>露柔旗舰店</h3>
+                                    </div>
+                                    <span class="aui-well-item-fr font-red">待付款</span>
+                                </a>
+                                <div class="aui-mail-product">
+                                    <a href="javascript:;" class="aui-mail-product-item">
+                                        <div class="aui-mail-product-item-hd">
+                                            <img src="../static/picture/order_complet.png" alt="">
+                                        </div>
+                                        <div class="aui-mail-product-left">
+                                            <div class="aui-mail-product-item-bd">
+                                                <p>88元抢原价100元老地方烤肉铺(南新街)代金券</p>
+                                            </div>
+                                            <div class="aui-mail-product-left-button goods-font">
+                                                <!--商品颜色、尺寸显示-->
+                                                <p class="goods-spec">颜色：</p>
+                                                <p class="goods-color">白色</p>
+                                                <p class="goods-spec" style="margin-left: 5px">尺码：</p>
+                                                <p class="goods-size">M </p>
+                                            </div>
+                                        </div>
+                                        <div class="aui-mail-product-item-sd">
+                                            <div class="aui-mail-product-item-top">￥<span>53.90</span></div>
+                                            <div class="aui-mail-product-item-button goods-font">x1</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="divHeight-s-long"></div>
+                                <div class="aui-mail-text2">
+                                    <div class="cancel">取消订单</div>
+                                    <div class="pay">付款</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--待使用模块-->
+                        <div class="tab-panel-item">
+                            <div class="tab-item">
+                                <a href="javascript:void(0);" class="aui-well-item ">
+                                    <div class="aui-well-item-hd">
+                                        <img src="../static/picture/wd-qgdp.png" alt="">
+                                    </div>
+                                    <div class="aui-well-item-bd">
+                                        <h3>露柔旗舰店</h3>
+                                    </div>
+                                    <span class="aui-well-item-fr font-red">待使用</span>
+                                </a>
+                                <div class="aui-mail-product">
+                                    <a href="javascript:;" class="aui-mail-product-item">
+                                        <div class="aui-mail-product-item-hd">
+                                            <img src="../static/picture/order_complet.png" alt="">
+                                        </div>
+                                        <div class="aui-mail-product-left">
+                                            <div class="aui-mail-product-item-bd">
+                                                <p>88元抢原价100元老地方烤肉铺(南新街)代金券</p>
+                                            </div>
+                                            <div class="aui-mail-product-left-button goods-font">
+                                                <!--商品颜色、尺寸显示-->
+                                                <p class="goods-spec">颜色：</p>
+                                                <p class="goods-color">白色</p>
+                                                <p class="goods-spec" style="margin-left: 5px">尺码：</p>
+                                                <p class="goods-size">M </p>
+                                            </div>
+                                        </div>
+                                        <div class="aui-mail-product-item-sd">
+                                            <div class="aui-mail-product-item-top">￥<span>53.90</span></div>
+                                            <div class="aui-mail-product-item-button goods-font">x1</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="divHeight-s-long"></div>
+                                <div class="aui-mail-text">
+                                    <a class="aui-mail-text-bold " href="javascript:;">电子券码</a>
+                                    <a class="aui-mail-text-light order-cod-over" href="javascript:;">0800 00347 0342</a>
+                                    <a class="aui-mail-text-tui">申请退款</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--待评价模块-->
+                        <div class="tab-panel-item">
+                            <div class="tab-item">
+                                <a href="javascript:void(0);" class="aui-well-item ">
+                                    <div class="aui-well-item-hd">
+                                        <img src="../static/picture/wd-qgdp.png" alt="">
+                                    </div>
+                                    <div class="aui-well-item-bd">
+                                        <h3>露柔旗舰店</h3>
+                                    </div>
+                                    <span class="aui-well-item-fr font-red">待评价</span>
+                                </a>
+                                <div class="aui-mail-product">
+                                    <a href="javascript:;" class="aui-mail-product-item">
+                                        <div class="aui-mail-product-item-hd">
+                                            <img src="../static/picture/order_complet.png" alt="">
+                                        </div>
+                                        <div class="aui-mail-product-left">
+                                            <div class="aui-mail-product-item-bd">
+                                                <p>88元抢原价100元老地方烤肉铺(南新街)代金券</p>
+                                            </div>
+                                            <div class="aui-mail-product-left-button goods-font">
+                                                <!--商品颜色、尺寸显示-->
+                                                <p class="goods-spec">颜色：</p>
+                                                <p class="goods-color">白色</p>
+                                                <p class="goods-spec" style="margin-left: 5px">尺码：</p>
+                                                <p class="goods-size">M </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="aui-mail-product-item-sd">
+                                            <div class="aui-mail-product-item-top">￥<span>53.90</span></div>
+                                            <div class="aui-mail-product-item-button goods-font">x1</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="divHeight-s-long"></div>
+                                <div class="aui-mail-text">
+                                    <a class="aui-mail-text-bold " href="javascript:;">电子券码</a>
+                                    <!--添加order-cod-over则加上中划线表示已使用-->
+                                    <a class="aui-mail-text-light order-cod-over" href="javascript:;">0800 00347 0342</a>
+                                    <a class="aui-mail-text-tui">评价</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-panel-item">
+                            <div class="tab-item">
+                                <a href="javascript:void(0);" class="aui-well-item ">
+                                    <div class="aui-well-item-hd">
+                                        <img src="../static/picture/wd-qgdp.png" alt="">
+                                    </div>
+                                    <div class="aui-well-item-bd">
+                                        <h3>露柔旗舰店</h3>
+                                    </div>
+                                    <span class="aui-well-item-fr font-red">已退款</span>
+                                </a>
+                                <div class="aui-mail-product">
+                                    <a href="javascript:;" class="aui-mail-product-item">
+                                        <div class="aui-mail-product-item-hd">
+                                            <img src="../static/picture/order_complet.png" alt="">
+                                        </div>
+                                        <div class="aui-mail-product-left">
+                                            <div class="aui-mail-product-item-bd">
+                                                <p>88元抢原价100元老地方烤肉铺(南新街)代金券</p>
+                                            </div>
+                                            <div class="aui-mail-product-left-button goods-font">
+                                                <!--商品颜色、尺寸显示-->
+                                                <p class="goods-spec">颜色：</p>
+                                                <p class="goods-color">白色</p>
+                                                <p class="goods-spec" style="margin-left: 5px">尺码：</p>
+                                                <p class="goods-size">M </p>
+                                            </div>
+                                        </div>
+                                        <div class="aui-mail-product-item-sd">
+                                            <div class="aui-mail-product-item-top">￥<span>53.90</span></div>
+                                            <div class="aui-mail-product-item-button goods-font">x1</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="divHeight-s-long"></div>
+                                <div class="aui-mail-text">
+                                    <a class="aui-mail-text-bold " href="javascript:;">电子券码</a>
+                                    <a class="aui-mail-text-light order-cod-over" href="javascript:;">0800 00347 0342</a>
+
+                                </div>
+                            </div>
+                            <div class="tab-item">
+                                <a href="javascript:void(0);" class="aui-well-item ">
+                                    <div class="aui-well-item-hd">
+                                        <img src="../static/picture/wd-qgdp.png" alt="">
+                                    </div>
+                                    <div class="aui-well-item-bd">
+                                        <h3>露柔旗舰店</h3>
+                                    </div>
+                                    <span class="aui-well-item-fr font-gray">退款中</span>
+                                </a>
+                                <div class="aui-mail-product">
+                                    <a href="javascript:;" class="aui-mail-product-item">
+                                        <div class="aui-mail-product-item-hd">
+                                            <img src="../static/picture/order_complet.png" alt="">
+                                        </div>
+                                        <div class="aui-mail-product-left">
+                                            <div class="aui-mail-product-item-bd">
+                                                <p>88元抢原价100元老地方烤肉铺(南新街)代金券</p>
+                                            </div>
+                                            <div class="aui-mail-product-left-button goods-font">
+                                                <!--商品颜色、尺寸显示-->
+                                                <p class="goods-spec">颜色：</p>
+                                                <p class="goods-color">白色</p>
+                                                <p class="goods-spec" style="margin-left: 5px">尺码：</p>
+                                                <p class="goods-size">M </p>
+                                            </div>
+                                        </div>
+                                        <div class="aui-mail-product-item-sd">
+                                            <div class="aui-mail-product-item-top">￥<span>53.90</span></div>
+                                            <div class="aui-mail-product-item-button goods-font">x1</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="divHeight-s-long"></div>
+                                <div class="aui-mail-text">
+                                    <a class="aui-mail-text-bold " href="javascript:;">电子券码</a>
+                                    <a class="aui-mail-text-light order-cod-over" href="javascript:;">0800 00347 0342</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <script type="text/javascript" src="../static/js/jquery.min.js"></script>
+        <script type="text/javascript" src="../static/js/tab.js"></script>
+    </body>
+</html>

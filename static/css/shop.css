@@ -1,0 +1,108 @@
+/*
+*店铺相关页面css
+*/
+
+
+/*店铺详情页面*/
+.tab-nav-history{
+    height:30px;
+    line-hight:30px;
+
+}
+.history-classify{
+    vertical-align:middle;
+}
+
+.srote-content{
+    position: relative;
+    overflow: hidden;
+
+}
+.srote-content-next{
+    background-color:#f1f2f3;
+ }
+.srote-goods{
+
+}
+.srote-introduce{
+
+}
+/*订单图中间文字样式*/
+.introduce1-other{
+    width: 100%;
+    height: auto;
+    padding-top:8px;
+
+    /*margin-left: 15px;*/
+}
+.introduce1-text {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 2;
+    min-width: 0;
+    font-size:15px;
+    font-weight: 600;
+    padding: 5px 0 0 15px;
+}
+.divHeight-shop {
+    background: #f0f2f5;
+    width: 100%;
+    height: 15px;
+}
+.goods-price{
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+    padding:2px 5px 10px 5px;
+    height: 55px;
+    border-radius: 10px;
+
+}
+/*我的订单电子券码数字样式*/
+.goods-price-left{
+    float: left;
+    width: 20%;
+    padding: 5px 5px;
+}
+.goods-price-left a{
+    font-size: 22px;
+    font-weight: 600;
+    color:#ff3e37;
+
+
+}
+.goods-price-right{
+    position:absolute;
+    right:0px;
+    width: 25%;
+    height: auto;
+    padding:5px 0 5px 0;
+    text-align: center;
+    border-radius:20px;
+    background: -webkit-linear-gradient(left,#ff761e,#ef4831);
+    background: -o-linear-gradient(right,#ff761e,#ef4831);
+    background: -moz-linear-gradient(right,#ff761e,#ef4831);
+    background: linear-gradient(to right,#ff761e,#ef4831);
+    margin: 0 10px 0 0;
+
+
+}
+.goods-price-right p{
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 0;
+}
+.introduce1-gps{
+    display: inline-flex;
+    padding-left:15px;
+    text-align: center;
+    margin-top: 5px;
+}
+.introduce1-gps img{
+
+}
+.introduce1-gps-new{
+    display: inline-flex;
+    color:#a9a9a9;
+    font-size: 12px;
+}

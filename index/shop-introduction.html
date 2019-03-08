@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<!--+++++++++++++++++++++-->
+<!--12商品详情店铺名称 √-->
+<!--+++++++++++++++++++++-->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>店铺名称</title>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <!--导入css-->
+
+    <link type="text/css" href="../static/css/shop-introduction.css" rel="stylesheet" />
+    <link type="text/css" href="../static/css/style.css" rel="stylesheet" />
+    <link type="text/css" href="../static/css/buy.css" rel="stylesheet" />
+    <link type="text/css" href="../static/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../static/iconfont/iconfont.css">
+    <link href="../static/css/swiper.min.css" rel="stylesheet">
+</head>
+<body style="width: 100%">
+<section class="aui-flexView">
+    <!-- 标题 返回按键   -->
+    <header class="aui-navBar aui-navBar-fixed">
+        <a href="javascript:history.go(-1)" class="aui-navBar-item">
+            <i class="iconfont2 icon-fanhui1"></i>
+        </a>
+        <div class="aui-center">
+            <span class="aui-center-title">店铺名称</span>
+        </div>
+    </header>
+    <!--内容部分-->
+    <section class="aui-scrollView">
+        <div class="header-slider" style="">
+            <div class="header-slider-con" style="width: 100%;height: auto;margin-bottom:5%;transition: all 500ms ease 0s; transform: translate3d(0px, 0px, 0px);">
+                <li class="header-slider-item" id="productTabLi" style="width: 100%; height: auto;">
+                    <div class="page-content " id="mainLayout">
+                        <!-- 焦点图片 -->
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" style="height: 414px;width: 100%"><img src="../static/picture/order_complet.png" style="width: 100%;height: 100%"  ></div>
+                                <div class="swiper-slide"style="height: 414px;width: 100%"><img src="../static/picture/order_complet.png" style="width: 100%;height: 100%"></div>
+                                <div class="swiper-slide"style="height: 414px;width: 100%"><img src="../static/picture/order_complet.png" style="width: 100%;height: 100%" ></div>
+                            </div>
+
+                            <div class="swiper-pagination swiper-pagination2 "></div>
+                        </div>
+
+
+
+                        <!--<div class="scroll-imgs">-->
+
+                        <!--<div id="slide" class="slide" style=" width: 100%;height: 414px; cursor: pointer;">-->
+                        <!--<ul data-slide-ul="firstUl" style=" width: 100%;height: 414px;">-->
+                        <!--<li  style="transition: all 0ms ease 0s; height: 414px;width: 100%; transform: translate3d(0px, 0px, 0px);"> <img src="../static/picture/order_complet.png" style="background-size:cover;"> </li>-->
+                        <!--<li  style="transition: all 0ms ease 0s; height: 414px; width: 414px; transform: translate3d(0px, 0px, 0px);"> <img src="../static/picture/order_complet.png"  > </li>-->
+                        <!--<li  style="transition: all 0ms ease 0s; height: 414px; width: 414px; transform: translate3d(0px, 0px, 0px);"> <img src="../static/picture/order_complet.png"> </li>-->
+                        <!--<li  style="transition: all 0ms ease 0s; height: 414px; width: 414px; transform: translate3d(0px, 0px, 0px);"> <img src="../static/picture/order_complet.png" > </li>-->
+                        <!--<li  style="transition: all 0ms ease 0s; height: 414px; width: 414px; transform: translate3d(0px, 0px, 0px);"> <img src="../static/picture/order_complet.png"> </li>-->
+                        <!--<li  style="transition: all 0ms ease 0s; height: 414px; width: 414px; transform: translate3d(0px, 0px, 0px);"> <img src="../static/picture/order_complet.png"> </li>-->
+                        <!--</ul>-->
+                        <!--<div class="tittup" >d'd-->
+                        <!--<div class="arrow-box">-->
+                        <!--<em class="arrow"></em>-->
+                        <!--<em class="arrow2"></em>-->
+                        <!--</div>-->
+                        <!--<span class="inner"> 滑动查看详情 </span>-->
+                        <!--</div>-->
+                        <!--<div class="page-nub" id="slidePageNub">-->
+                        <!--<em data-slide-num="slideNub" class="fz18">1</em>-->
+                        <!--<em class="nub-bg">/</em>-->
+                        <!--<em data-slide-num="slideSum" class="fz12">6</em>-->
+                        <!--</div>-->
+                        <!--</div>-->
+
+                    </div>
+                    <!--秒杀新版楼层 开始-->
+                    <div class="seckill-floor">
+                        <div class="seckil-price-wrap">
+                            <div class="seckill-price">
+                                <span class="seckill-big-price-rmb">￥</span>
+                                <span class="seckill-big-price">149.00</span>
+                                <span class="seckill-big-price-yuan">￥149.00</span>
+
+                            </div>
+                        </div>
+                        <div class="seckil-time-wrap">
+                            <span class="seckil-time-title">距结束还有:</span>
+                            <div class="seckill-time-div" id="seckill_time">
+                                <span class="seckill-time-day">5</span>
+                                <span class="seckill-time-day">天</span>
+                                <span class="seckill-time-num">04</span>
+                                <span class="seckill-time-colon"> : </span>
+                                <span class="seckill-time-num">31</span>
+                                <span class="seckill-time-colon"> : </span>
+                                <span class="seckill-time-num">59</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--结束-->
+                    <div class="goods-part  price-floor">
+                        <!-- 名称 、价格start -->
+                        <!-- 楼层样式修改 添加bord样式 mjs 20151112-->
+                        <div class="basic-info bdr-b borb padding15px">
+                            <!--名称-->
+                            <div class="prod-title">
+                                    <span class="title-text">88元抢原价老地方烤肉铺子（南新街）代金券限周一至周日使用</span>
+                            </div>
+                        </div>
+                        <!-- 调整样式分割线结束位置   mjs 20151112 -->
+                    </div>
+                    <div class="divHeight"></div>
+                    <!-- 样式分割线 -->
+                    <!-- 调整样式分割线位置 增加mar-t样式  mjs 20151112 -->
+                    <div id="couponActivity" class="goods-part   padding15px">
+
+                        <div id="whiteBarInfo"  class="prod-whitebar prod-whitebar-top">
+                            <span class="part-note-msg">抢购结束日期：</span>
+                            <div class="prod-whitebar-txt">
+                                <div class="seckill-time-div" >
+                                    <span class="seckill-time-day">2019-01-31</span>
+                                    <span class="seckill-time-day">23:59:59</span>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="whiteBarInfos"  class="prod-whitebar prod-whitebar-button  ">
+                            <span class="part-note-msg">消费截至日期：</span>
+                            <div class="prod-whitebar-txt">
+                                <div class="seckill-time-div" >
+                                    <span class="seckill-time-day">2019-01-31</span>
+                                    <span class="seckill-time-day">23:59:59</span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divHeight"></div>
+                    <!--联系店铺样式  mar-t分割线-->
+                    <div class="shop—connection  ">
+                        <div class="shop-show ">
+                            <div class="shop-introduction">
+                                <div class="shop-names">莫凡小镇官方旗舰店</div>
+                                <div class="sho-address">泉州市惠安区禹州城市广场4号楼对面</div>
+                                <!--<em class="icon-popups"></em>-->
+                            </div>
+                            <div class="shop-tel">
+                                <img class="shop-tel-pic" src="../static/picture/xq-dh.png" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divHeight"></div>
+                    <!--评价end-->
+
+                    <div  class="goods-part ">
+                        <!--评论start-->
+                        <div class="goodseval" id="btnAssess" >
+                            <a>
+                                <div class="info2">
+                                    <div class="evaluate1">
+                                        <span class="part-note-msg">评价(<em id="comments">29893</em>)</span>
+                                    </div>
+                                    <div class="icon-arrow icon-arrow-right">
+                                        <img src="../static/picture/shdz-fh.png" width=6px>
+                                    </div>
+                                </div>
+                            </a>
+
+
+                        </div>
+                        <div class="prod-comment" id="showDetail">
+                            <!--此处新增 增加商品评论 20150422-->
+                            <div class="comment-list" id="comment-listID">
+                                <div class="comment-list-item">
+                                    <div class="comment-item-infos">
+                                        <span class="comment-item-pic tovertical"><img src="../static/picture/tou.png"></span>
+                                        <span class="comment-author tovertical">j***6</span>
+                                        <span class="product-item-star tovertical"><span class="real-star comment-stars-width5"></span></span>
+                                    </div>
+                                    <div class="comment-item-content down-icon">
+                                        <span class="content">喜欢喜欢喜欢喜欢喜欢喜欢喜欢喜欢喜欢喜欢喜欢喜欢喜欢喜欢喜欢喜欢喜欢喜欢喜欢喜欢喜欢喜欢喜欢喜欢喜欢喜欢喜欢喜欢</span>
+                                    </div>
+
+                                    <div class="comment-buttom-date ">
+                                        <div class="comment-buttom-time margin15px" >2016-12-23</div>
+                                        <div class="comment-buttom-style margin15px" >属性：<div class="comment-buttom-color">白色</div></div>
+                                        <div class="comment-buttom-style " >尺码：<div class="comment-buttom-ruler"> M</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--查看评价部分-->
+                        <div  class="evaluation">
+                            <div  class="all-evaluation">
+                                <div  class="all-evaluation-out">
+                                    查看全部评价
+                                </div>
+                            </div>
+                        </div>
+
+                        <div  class="detailed " style="background-color: #f1f2f3">
+                            <div  class="detailed-child">
+                                <span class="lines"></span>
+                                <span  class="all-evaluation-out">
+                                         商品详情
+                                    </span>
+                                <span class="lines"></span>
+                            </div>
+                        </div>
+                        <div class="scroll-imgs">
+                            <div  class="slide" style="width: 414px; height: 414px; cursor: pointer;">
+                                <ul data-slide-ul="firstUl" style="width: 2484px; height: 414px;">
+                                    <li data-ul-child="child"  onclick="toWarePicShow()" style=" height: auto; width: 414px; ">
+                                        <img src="../static/picture/order_complet.png" width="100%" height="100%">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 调整样式分割线结束位置  -->
+            </div>
+        </div>
+
+    </section>
+    <!--底部-->
+    <!--<div id="cart1" class="cart-concern-btm-fixed five-column">-->
+        <!--<div class="concern-cart">-->
+            <!--&lt;!&ndash;Jimi客服(hasJimi&&notOnline)&ndash;&gt;-->
+            <!--<a class="jimi-icn J_ping" id="imJimiBottom" href="http://jimi.m.jd.com/?source=m_product&amp;productId=10489264012&amp;sid=95b7ce42df73bec8d1b65217d4b6b645">-->
+                <!--<em class="btm-act-icn"></em>-->
+                <!--<span class="focus-info">客服</span> </a>-->
+            <!--&lt;!&ndash;咚咚客服&ndash;&gt;-->
+            <!--<a class="love-heart-icn J_ping" id="focusOn" report-eventid="MProductdetail_AddtoFollowed" report-eventparam="10489264012" report-pageparam="10489264012" report-eventlevel="5">-->
+                <!--<em class="btm-act-icn focus-out" id="attentionFocus"></em>-->
+                <!--<i class="focus-scale"></i>-->
+                <!--<span class="focus-info"> 收藏 </span>-->
+            <!--</a>-->
+            <!--<a class="cart-car-icn J_ping" id="toCartNew" href="order.html">-->
+                <!--<em class="btm-act-icn" id="shoppingCart">-->
+                    <!--<i class="order-numbers" id="carNum"></i>-->
+                <!--</em>-->
+                <!--<span class="focus-info">订单</span>-->
+            <!--</a>-->
+        <!--</div>-->
+    <div  class="cart-concern-btm-fixed2 five-column">
+        <div class="concern-cart2" >
+
+            <div class="newfir">
+                <img src="../static/picture/dp-kf.png" width="50%">
+                <div class="focus-info-new">客服</div>
+            </div>
+
+
+            <div class="newfir">
+                <img src="../static/picture/xq-sc.png" width="50%">
+                <div class="focus-info-new">收藏</div>
+            </div>
+            <div class="newfir">
+                <img src="../static/picture/xq-dd.png" width="50%">
+                <div class="focus-info-new">订单</div>
+            </div>
+        </div>
+        <div class="action-list" id="chose">
+            <a class="red-color  paddings" style="color: #fff;"><p style="margin-top: 10px">立即购买</p></a>
+        </div>
+    </div>
+    <!--<div  class="cart-concern-btm-fixed five-column">-->
+        <!--<div class="concern-cart" style="width: 50%;">-->
+
+            <!--<div class="fir">-->
+                <!--<img src="../static/picture/dp-kf.png" width="60%">-->
+                <!--<div class="focus-info-new">客服</div>-->
+            <!--</div>-->
+
+
+            <!--<div class="fir2">-->
+                <!--<img src="../static/picture/dp-dh.png" width="50%">-->
+                <!--<div class="focus-info-new">电话咨询</div>-->
+            <!--</div>-->
+
+        <!--</div>-->
+
+        <!--&lt;!&ndash;立即购买：&ndash;&gt;-->
+        <!--<div class="action-list" id="chose">-->
+            <!--<a class="red-color directorder" style="color: #fff;">立即购买</a>-->
+        <!--</div>-->
+
+    <!--</div>-->
+    <!--购买弹出-->
+    <div class="buy-out" id="buy-out">
+        <div class="buy" id="buy" style="background-color: #fff">
+
+            <div class="col-lg-6">
+                <div class="row poward">
+                    <div class="imitation">
+                        <img src="../static/picture/order_complet.png"  style="width: 100px ; padding:1px;"></div>
+                    <div class="col-xs-4 chose_a"></div>
+                    <!--开始-->
+                    <div class="jump">
+                        <div class="pires"><div class="text-2"style="margin-top:5px; ">￥</div><div class="text-l">59.00</div></div>
+                        <div class=" ">剩余233份</div>
+                    </div>
+                    <!--结束-->
+                    <!--开始-->
+                    <div class=" chose_noll">
+                        <div class=" concent_a">￥98</div>
+                        <div class=" concent_b">库存20件</div>
+                        <div class=" concent_c">请选择 颜色分类 尺码</div>
+                    </div>
+                    <!--结束-->
+                    <div class="over-img"><img src="../static/picture/xq-gb.png" class="img-responsive"  id="close1"></div>
+                </div>
+                <div class=" laisi">购买数量</div>
+                <div class=" shuliang">
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <button>-</button>
+                            <strong style="margin: 0 15px;"> 1 </strong>
+                            <button>+</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="divHeight-x"></div>
+                <div class=" laisigo2">
+                    <div class=" sosos">
+                        联系方式：
+                    </div>
+                    <div class=" sosos">
+                        <input type="text" placeholder="请输入联系方式" autofocus x-webkit-speech class="searc">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3"></div>
+            <div class="nowbuy">
+                <div class="nowbuy-but">确认购买</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript" src="../static/js/jquery.min.js"></script>
+<script type="text/javascript" src="../static/js/tab.js"></script>
+<script src="../static/js/zpcommon.js" charset="UTF-8"></script>
+
+<script src="../static/js/downloadappplugin_imk2.js"></script>
+<script src="../static/js/swiper.js" charset="UTF-8"></script>
+<script src="../static/js/common.js" charset="UTF-8"></script>
+<script src="../static/js/exrtm.js" charset="UTF-8"></script>
+<script type="text/javascript" src="../static/js/jquery-1.11.2.min.js"></script>
+<script src="../static/js/data.js" charset="UTF-8"></script>
+<script>
+
+        var lis = document.querySelectorAll("li");
+        var p = document.querySelector("p");
+
+        for (var i = 0; i < lis.length; i++) {
+            count(i);
+        }
+
+        //计数的函数，参数为每一个Li对应的下标（在函数里通过下标去取到对应的Li）
+        function count(n) {
+            //获取到对应li里的相关元素
+            var btns = lis[n].querySelectorAll('button');
+            var strong = lis[n].querySelector('strong');
+            var span = lis[n].querySelector('span');
+            var em = lis[n].querySelector('em');
+
+            var num = 0; //对应选择到商品的数量
+            //给+添加点击事件
+            window.onload = function () {
+                btns[1].onclick = function () {
+                    /*
+                     * 1、商品的数量要累加
+                     * 2、小计的值也要累加
+                     * 3、改变下面p标签里的内容
+                     */
+
+                    num++;
+
+                    strong.innerHTML = num;
+                    span.innerHTML = num * parseFloat(em.innerHTML) + '元';
+
+                    sum(); //第三件事情
+                }
+
+                //给-添加点击事件
+                btns[0].onclick = function () {
+                    /*
+                     * 1、商品的数量要累加
+                     * 2、小计的值也要累加
+                     * 3、改变下面p标签里的内容
+                     */
+                    num--;
+
+                    /*
+                     * 减到0的时候就不能再减了
+                     */
+                    if (num < 0) {
+                        num = 0;
+                    }
+
+                    strong.innerHTML = num;
+                    span.innerHTML = num * parseFloat(em.innerHTML) + '元';
+
+                    sum(); //第三件事情
+                };
+
+            };
+
+            function sum() {
+                /*
+                 * 这个函数里要做的事情
+                 * 1、修改共购买的数量
+                 * 2、算出最贵的
+                 * 3、算出一共多少钱
+                 */
+
+                var buyNum = 0; //共购买的数量
+                var expensive = 0; //最贵的单价
+                var total = 0; //出一共多少钱
+
+                for (var i = 0; i < lis.length; i++) {
+                    var strongInner = lis[i].querySelector('strong').innerHTML;
+                    var emInner = lis[i].querySelector('em').innerHTML;
+                    var spanInner = lis[i].querySelector('span').innerHTML;
+
+                    if (strongInner > 0) {
+                        /*
+                         * 要算最贵单价，前提是这个商品必需被购买了，也就是它对应的strongInner要大于0
+                         *
+                         */
+
+                        if (parseFloat(emInner) > expensive) {
+                            expensive = parseFloat(emInner);
+                        }
+                    }
+
+                    buyNum = buyNum + parseFloat(strongInner);
+                    total = total + parseFloat(spanInner);
+                }
+
+                p.innerHTML = '共购买了 <strong>' + buyNum + '</strong> 件商品，单价最贵是：<strong>' + expensive + '</strong>元，合计 <strong>' + total + '</strong> 元；';
+            }
+
+    }
+    var mySwiper = new Swiper('.swiper-container',{
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'custom',
+            renderCustom: function (swiper, current, total) {
+                return current + ' / ' + total;
+            }
+        },
+    });
+
+    //		$().ready(function(){
+    //			$("#btnp1").click(function() {
+    //				$("#btnp1").css("background-color", "#f085224");
+    //		});
+
+    $(document).ready(function(){
+        // 点击事件
+        $("#chose").click(function() {
+            $("#buy-out").slideDown();
+            // $("#body").css("background-color", "#ffffff");
+            // $("#body").css("opacity", "0.5");
+        });
+        // 关闭
+        $("#close1").click(function() {
+            $("#buy-out").hide();
+            // $("#body").css("background-color", "#ffffff");
+            // $("#body").css("opacity", "1");
+        });
+    })
+    $().ready(function() {
+
+        $("#btns").click(function() {
+            $(".rr").hide();
+        })
+        $("#btns2").click(function() {
+            $(".zcxs").hide();
+        })
+
+    })
+    $().ready(function() {
+
+        $("#btnp1").click(function() {
+            $(".chose_b").hide();
+            $(".chose_noll").show();
+        })
+
+    })
+</script>
+</body>
+</html>

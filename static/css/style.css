@@ -1,0 +1,378 @@
+﻿/*
+
+* 公共页面样式
+
+*/
+
+/*初始化*/
+html,body {
+    color: #333;
+    margin: 0;
+    height: auto;
+    font-family: Helvetica;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: normal;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a, label, button, input, select {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+img {
+    border: 0;
+}
+
+body {
+    background: #fff;
+    color: #000;
+}
+
+html, body, div, dl, dt, dd, ol, ul, li, h1, h2, h3, h4, h5, h6, p, blockquote, pre, button, fieldset, form, input, legend, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+button {
+    outline: 0;
+}
+
+img {
+    border: 0;
+}
+
+button,input,optgroup,select,textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    outline: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #000;
+}
+/*分割栏*/
+.divHeight {
+    background: #f0f2f5;
+    width: 100%;
+    height: 10px;
+}
+/*带细边的分隔栏*/
+.divHeight-index {
+    background: #f0f2f5;
+    width: 100%;
+    height: 10px;
+    border: 1px solid #ebebeb;
+}
+
+
+/*页面底部nav导航*/
+.nav{padding-top:15px;padding-bottom:10px; bottom:0px; left:0px; right:0px; position:fixed; overflow:hidden; width:100%; height:40px; background:#fff;z-index:800; }
+.foot{
+    text-align:center;
+    font-size:16px;
+    font-family: Helvetica;
+    font-weight: 400;
+    color:#000;
+    padding-bottom:3px;
+    border-left: 1px solid #ebebeb;
+}
+.foot span{color:#ff6633;}
+.nav a{ text-decoration:none;color:#000;}
+
+
+.title_bar{
+    position:relative;
+    width: 100%;
+    background-color: #fff;
+    overflow:hidden;
+    padding-bottom: 20px;
+    display: -webkit-flex;
+    display: inline-flex;
+    /*padding: 3% 2%;*/
+    /*flex-direction: row;*/
+    /*justify-content: center;*/
+
+}
+.flexView {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.aui-navBar {
+    height: 44px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: inline-flex;
+    z-index: 9999;
+    background: #ffffff;
+    top:0px;
+    left:0px;
+    right:0px;
+    position:fixed;
+}
+.aui-navBar-xin {
+    height: 44px;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: inline-flex;
+    z-index: 1002;
+    background: #000;
+}
+
+.aui-navBar-item {
+    height: 44px;
+    min-width: 25%;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 25%;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    padding: 0 0.9rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 0.7rem;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #808080;
+    position: relative;
+}
+.aui-navBar-item:first-child {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    margin-right: -25%;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.aui-navBar-item:last-child {
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+    -ms-flex-order: 3;
+    order: 3;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+/*两个*/
+.aui-center {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 44px;
+    width: 50%;
+    margin-left: 25%;
+}
+/*三个*/
+.aui-right {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 44px;
+    width: 25%;
+
+}
+/*顶部标题样式*/
+.aui-center-title {
+    text-align: center;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    text-overflow: ellipsis;
+    font-size: 19px;
+    font-weight: 600;
+    font-family: Helvetica;
+    color: #000;
+}
+/*顶部右侧标题样式*/
+.aui-center-title-r {
+    text-align: center;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: Helvetica;
+    color: #f2c55f;
+}
+.aui-center-title-c {
+    text-align: center;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    text-overflow: ellipsis;
+    font-size: 19px;
+    font-weight: 600;
+    font-family: Helvetica;
+    color: #f2c55f;
+}
+/*消息页面 编辑按钮*/
+.aui-center-edit{
+    text-align: right;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    font-family: "微软雅黑 Light";
+    color: #000;
+}
+
+/*较大尺寸的图标 如顶部返回*/
+.iconfont2 {
+    font-family: "iconfont" !important;
+    font-size: 20px;
+    color: #000;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/*body的下层*/
+.aui-flexView {
+
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    z-index: 500;
+
+}
+
+/*顶部分类栏*/
+/*订单详情*/
+
+/*.tab-nav-item {*/
+    /*height: 40px;*/
+    /*line-height: 40px;*/
+    /*position: relative;*/
+    /*text-align: center;*/
+    /*color: #585858;*/
+    /*font-size: 0.9rem;*/
+    /*display: block;*/
+    /*float: left;*/
+    /*border-radius: 80px;*/
+    /*padding: 0 15px;*/
+    /*width: 25%;*/
+    /*margin: 0 auto;*/
+/*}*/
+/*四个的*/
+.tab-nav-item4 {
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    color: #585858;
+    font-size: 0.9rem;
+    display: block;
+    float: left;
+    border-radius: 80px;
+    padding: 0 15px;
+    width: 25%;
+    margin: 0 auto;
+}
+/*店铺详情*/
+.tab-nav-item-store {
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    color: #585858;
+    font-size: 0.9rem;
+    display: block;
+    float: left;
+    border-radius: 80px;
+    padding: 0 15px;
+    width: 33%;
+    margin: 0 auto;
+}
+
+
+/*字体样式*/
+.font-red{
+    color: #f11d1c;;
+}
+.font-gray{
+    color: #858585;
+}
+. font-17{
+    font-size: 17px;
+}

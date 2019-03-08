@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<!--+++++++++++++++++++++++++++++-->
+<!---限时抢购        √    -->
+<!--+++++++++++++++++++++++++++++-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>限时抢购</title>
+        <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport"/>
+        <meta content="yes" name="apple-mobile-web-app-capable"/>
+        <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+        <meta content="telephone=no" name="format-detection"/>
+        <!--导入css-->
+        <link type="text/css" href="../static/css/flashsale.css" rel="stylesheet" />
+        <link type="text/css" href="../static/css/style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../static/iconfont/iconfont.css">
+    </head>
+    <body style="background-color: #F1F2F4;">
+        <section class="aui-flexView">
+            <!-- 标题 返回按键   -->
+            <header class="aui-navBar aui-navBar-fixed">
+                <a href="javascript:history.go(-1)"  class="aui-navBar-item">
+                    <i class="iconfont2 icon-fanhui1"></i>
+                </a>
+                <div class="aui-center">
+                    <span class="aui-center-title"><img src="../static/picture/flashsale.png" width="50%"> </span>
+                </div>
+            </header>
+            <!--内容部分-->
+            <section class="aui-scrollView">
+                <div class="aui-tab" data-ydui-tab>
+                    <ul class="tab-nav">
+                        <!--顶部导航栏切换  切换效果js:tab.js第59行 -->
+                        <li class="tab-nav-item tab-active">
+                            <a href="javascript:;"><p>08:00</p><p class="fontsize15">抢购中</p></a>
+                            <!--<span class="org_bot_cor"></span>-->
+
+                        </li>
+                        <li class="tab-nav-item ">
+                            <a href="javascript:;"><p>08:00</p><p class="fontsize15">即将开始</p></a>
+                        </li>
+                    </ul>
+                    <!--分割线-->
+                    <div class="divHeight-f"></div>
+
+                    <div class="tab-panel">
+                        <!-- 全部订单模块 class : tab-panel-item  添加tab-active 类,则为刷新后首先显示-->
+                        <div class="tab-panel-next">
+                            <div class="tab-panel-item tab-active">
+                                <!--限时抢购-->
+                                <div class="limitedtime">
+                                    <i class="limitedtime-bar">
+                                        <table width="100%"  class="limitedtime2">
+                                            <tr style="width: 100%;">
+                                                <td class="limitedtime-text">
+                                                    <p>抢购中， 先下单先得到哦</p>
+                                                </td>
+                                                <td class="limitedtime-time">
+                                                    <td class="notblack-text1"><p style="color:#6e7479;">距离结束</p></td>
+                                                    <td class="black-text"><p>10</p></td>
+                                                    <td class="notblack-text"><p>:</p></td>
+                                                    <td class="black-text"><p>0</p></td>
+                                                    <td class="notblack-text"><p>:</p></td>
+                                                    <td class="black-text"><p>10</p></td>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </i>
+                                </div>
+                                <div class="tab-item">
+                                    <div class="aui-mail-product">
+                                        <div class="aui-mail-product-item">
+                                            <!--商品图片-->
+                                            <div class="aui-mail-product-item-hd">
+                                                <img src="../static/picture/order_complet.png" alt="">
+                                            </div>
+                                            <div class="content-text">
+                                                <div class="aui-mail-product-left">
+                                                    <!--商品名-->
+                                                    <div class="product-tit">
+                                                        <p>88元抢原价100元老地方烤肉铺(南新街)</p>
+                                                    </div>
+                                                </div>
+                                                <!-- 商品价格 -->
+                                                <div class="aui-mail-product-item-sd">
+                                                    <img src="../static/picture/dp-dw.png" >
+                                                    <div class="distance1"><span>85.5</span>km</div>
+                                                </div>
+                                                <div class="content-other">
+                                                    <div class="product-buttom-l">
+                                                        <div class="product-item-top-red">￥<span style="font-size: 18px">53.90</span></div>
+                                                        <div class="product-item-top-gray">￥<span>53.90</span></div>
+                                                    </div>
+                                                    <div class="product-buttom-r">
+                                                        <div class="buy-button">立即抢购</div>
+                                                        <div class="progressbar">
+                                                            <span class="progressbar-info">已售 <p id="">50%</p></span>
+                                                            <!--进度条长度需要调整 class：progress-now 的 witdh百分比    文字需要上面调整p标签内的百分比数字-->
+                                                            <div class="container">
+                                                                <div class="skills progress-now"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="aui-mail-product">
+                                        <div class="aui-mail-product-item">
+                                            <!--商品图片-->
+                                            <div class="aui-mail-product-item-hd">
+                                                <img src="../static/picture/order_complet.png" alt="">
+                                            </div>
+                                            <div class="content-text">
+                                                <div class="aui-mail-product-left">
+                                                    <!--商品名-->
+                                                    <div class="product-tit">
+                                                        <p>88元抢原价100元老地方烤肉铺(南新街)</p>
+                                                    </div>
+                                                </div>
+                                                <!-- 商品价格 -->
+                                                <div class="aui-mail-product-item-sd">
+                                                    <img src="../static/picture/dp-dw.png" >
+                                                    <div class="distance1"><span>85.5</span>km</div>
+                                                </div>
+                                                <div class="content-other">
+                                                    <div class="product-buttom-l">
+                                                        <div class="product-item-top-red">￥<span style="font-size: 18px">53.90</span></div>
+                                                        <div class="product-item-top-gray">￥<span>53.90</span></div>
+                                                    </div>
+                                                    <div class="product-buttom-r">
+                                                        <div class="buy-button-over"><div class="texts"> 已抢光</div></div>
+                                                        <div class="progressbar">
+                                                            <span class="progressbar-info">已售 <p id="">100%</p></span>
+                                                            <!--进度条长度需要调整 class：progress-now2 的 width百分比    文字需要上面调整p标签内的百分比数字-->
+                                                            <div class="container">
+                                                                <div class="skills progress-now2"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--<div class="divHeight-s"></div>-->
+                                    <!--<div class="aui-mail-text">-->
+                                        <!--&lt;!&ndash;电子券码&ndash;&gt;-->
+                                        <!--<a class="aui-mail-text-bold" href="javascript:;">电子券码</a>-->
+                                        <!--<a class="aui-mail-text-light" href="javascript:;">0800 00347 0342</a>-->
+
+                                    <!--</div>-->
+                                </div>
+                                <div class="divHeight"></div>
+                            </div>
+                        </div>
+                        <!-- 待消费订单模块 class : tab-panel-item  添加tab-active 类,则为刷新后首先显示-->
+                        <div class="tab-panel-item">
+
+                            <div class="tab-item">
+                                <div class="top-tip">
+
+                                </div>
+                                <a href="javascript:void(0);" class="aui-well-item ">
+                                    <div class="aui-well-item-hd">
+                                        <img src="../static/picture/wd-qgdp.png" alt="">
+                                    </div>
+                                    <div class="aui-well-item-bd">
+                                        <h3>露柔旗舰店</h3>
+                                    </div>
+                                    <span class="aui-well-item-fr font-red">待付款</span>
+                                </a>
+                                <div class="aui-mail-product">
+                                    <a href="javascript:;" class="aui-mail-product-item">
+                                        <div class="aui-mail-product-item-hd">
+                                            <img src="../static/picture/order_complet.png" alt="">
+                                        </div>
+                                        <div class="aui-mail-product-left">
+                                            <div class="aui-mail-product-item-bd">
+                                                <p>88元抢原价100元老地方烤肉铺(南新街)代金券</p>
+                                            </div>
+                                            <div class="aui-mail-product-left-button goods-font">
+                                                <!--商品颜色、尺寸显示-->
+                                                <p class="goods-spec">颜色：</p>
+                                                <p class="goods-color">白色</p>
+                                                <p class="goods-spec" style="margin-left: 5px">尺码：</p>
+                                                <p class="goods-size">M </p>
+                                            </div>
+                                        </div>
+                                        <div class="aui-mail-product-item-sd">
+                                            <div class="aui-mail-product-item-top">￥<span>53.90</span></div>
+                                            <div class="aui-mail-product-item-button goods-font">x1</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="divHeight-s-long"></div>
+                                <div class="aui-mail-text2">
+                                    <div class="cancel">取消订单</div>
+                                    <div class="pay">付款</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+            </section>
+        </section>
+        <script type="text/javascript" src="../static/js/jquery.min.js"></script>
+        <script type="text/javascript" src="../static/js/tab.js"></script>
+    </body>
+</html>

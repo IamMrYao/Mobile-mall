@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>登录</title>
+        <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport"/>
+        <meta content="yes" name="apple-mobile-web-app-capable"/>
+        <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+        <meta content="telephone=no" name="format-detection"/>
+        <link rel="stylesheet" href="../static/iconfont/iconfont.css">
+        <link type="text/css" href="../static/css/style.css" rel="stylesheet" />
+
+        <style>
+
+            /*输入框文字样式*/
+            .input-font-login {
+                font: 0.9rem/1 tahoma, arial, 'Microsoft YaHei', simsun;
+            }
+            ::-webkit-input-placeholder {
+                color:#999;
+            }
+
+            .text-left {
+                text-align: left !important;
+                padding: 3% 2%;
+
+            }
+            .text-center {
+                text-align: center !important;
+            }
+            .text-right {
+                text-align: right !important;
+            }
+
+            .block {
+                display: block !important;
+            }
+
+            .circle {
+                border-radius: 50%;
+                overflow: hidden;
+
+            }
+
+            .iconfont {
+                font-family: "iconfont" !important;
+                font-size: 18px;
+                font-style: normal;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+            .font-color{ color:#000;font-size: 15px;}
+            /*登录注册*/
+            /*头像以下部分的垂直位置margin: 2rem auto 4rem;   头像图标垂直位置line-height: 6.1rem; 大小font-size: 6rem;*/
+            .login-logo{
+                width: 6rem;
+                height: 6rem;
+                background: #e9e9e9;
+                margin: 5rem auto 2rem;
+                color: #fff;
+                line-height: 6.1rem;
+                font-size: 6rem;
+            }
+
+            /*input标签间距： margin-top:*/
+            .login-cont li{ height: 3rem; margin-top: 1rem; position: relative; overflow: hidden;}
+            /*预设文字在input中位置padding-left  top: -10%;*/
+            .login-cont li input{ border: none;background-color: #F7F7F7;  width: 100%; outline: 0;padding-left:15%; height: 3.5rem; line-height: 10rem;position: absolute;top: -10%; }
+            /*两个input 图标的垂直位置控制line-height，input和button的宽度：margin（取消下方.icon-user中top后调整）*/
+            .login-cont{ margin: 0 2rem; line-height: 2rem;}
+            /*密码图标位置:top translate(0,-50%)*/
+            #click{ position: absolute; right: 0; top: 40%; margin-top: 0.5rem; transform: translate(0,-50%)}
+            .button{background: #FD423E; color: #fff; height: 3.5rem; line-height: 4rem; font-size: 1.2rem; margin-top:1rem;}
+            .div-bor{
+                position: relative;
+            }
+            /*登录按钮以下距离top元素的外边距距离*/
+            .tops{
+                margin-top:25px;
+            }
+            /*用户密码图标位置left: 5%;top:13%;*/
+            .icon-user{
+                position: absolute;left: 5%;top:13%;
+                z-index:5;
+                background-repeat: no-repeat; /*设置图片不重复*/
+                background-position: 0px 0px; /*图片显示的位置*/
+                width: 20px; /*设置图片显示的宽*/
+                height: 20px; /*图片显示的高*/
+
+            }
+        </style>
+    </head>
+    <body>
+        <!--左上角返回图标-->
+        <header class="aui-navBar aui-navBar-fixed">
+            <a href="javascript:;" class="aui-navBar-item">
+                <i class="iconfont2 icon-fanhui1"></i>
+            </a>
+            <div class="aui-center">
+                <span class="aui-center-title"></span>
+            </div>
+        </header>
+        <!--<div class=" text-left iconfont icon-fanhui" style="font-size: 25px" > </div>-->
+        <!--中间用户头像图标-->
+        <div class="login-logo circle text-center iconfont icon-geren2" > </div>
+        <!--输入框 以及 登录按钮-->
+        <form name="forms" onSubmit="return checkreg()" action="homepage.html" method="post" class="login-cont">
+            <ul>
+                <!--输入框-->
+                <li class="div-bor">
+                    <i class="icon-user"><div class="iconfont icon-yonghu "></div></i>
+                    <input type="tel" class="input-font-login"  placeholder="请输入您的手机号" ></li>
+                <li class="div-bor">
+                    <i class="icon-user"><div class="iconfont icon-mima "></div></i>
+                    <span id="box" ><input class="input-font-login" type="password "  name="password" placeholder="请输入密码"></span>
+                    <span id="click"><a href="javascript:ps()" class="iconfont icon-newbiyan-copy" style="padding-right:10px;"></a></span></li>
+            </ul>
+            <!--登录按钮-->
+            <a href="javascript:;"  class="button text-center block tops">登 录</a>
+            <!--忘记密码-->
+            <a href="javascript:;" class="text-right block font-color">忘记密码？</a>
+        </form>
+
+
+        <script type="text/javascript">
+            // 密码可视化切换
+            function ps(){
+                if (this.forms.password.type="password")
+                    box.innerHTML="<input type=\"html\" name=\"password\" size=\"20\" value="+this.forms.password.value+">";
+                click.innerHTML="<a href=\"javascript:txt()\" class=\"iconfont icon-zhengyan\" style=\"padding-right:10px;\"></a>"}
+            function txt(){
+                if (this.forms.password.type="text")
+                    box.innerHTML="<input type=\"password\" name=\"password\" size=\"20\" value="+this.forms.password.value+">";
+                click.innerHTML="<a href=\"javascript:ps()\" class=\"iconfont icon-newbiyan-copy\" style=\"padding-right:10px;\"></a>"}
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<!--+++++++++++-->
+<!-- 6-消息中心 -->
+<!--+++++++++++-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>消息</title>
+        <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport"/>
+        <meta content="yes" name="apple-mobile-web-app-capable"/>
+        <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+        <meta content="telephone=no" name="format-detection"/>
+        <!--导入css-->
+        <link type="text/css" href="../static/css/news.css" rel="stylesheet" />
+        <link type="text/css" href="../static/css/style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../static/iconfont/iconfont.css">
+    </head>
+    <body style="background-color: #F1F2F4;">
+        <section class="aui-flexView">
+            <!-- 标题 返回按键   -->
+            <header class="aui-navBar aui-navBar-fixed">
+                <a  onClick="javascript :history.back(-1);" class="aui-navBar-item">
+                    <i class="iconfont2 icon-fanhui1"></i>
+                </a>
+                <div class="aui-center">
+                    <span class="aui-center-title">消息</span>
+                </div>
+
+                <div class="aui-right">
+                    <a><span class="aui-center-edit">编辑</span></a>
+                </div>
+            </header>
+            <!--内容部分-->
+            <section class="aui-scrollView">
+                <div class="aui-tab" data-ydui-tab>
+                    <ul class="tab-nav">
+                        <!--顶部导航栏切换  切换效果js:tab.js第59行 -->
+                        <li class="tab-nav-item tab-active">
+                            <a href="javascript:;">全部消息</a>
+                        </li>
+                        <li class="tab-nav-item">
+                            <a href="javascript:;">只看未读</a>
+                        </li>
+
+                    </ul>
+                    <!--分割线-->
+                    <div class="divHeight"></div>
+                    <!--待消费栏 模块-->
+                    <div class="tab-panel">
+                        <div class="tab-panel-next">
+                            <!-- 待消费订单模块 class : tab-panel-item 切换效果js:tab.js第59行 -->
+                            <div class="tab-panel-item tab-active">
+                                <div class="tab-item">
+                                    <!--成功参与活动 点击过-->
+                                    <div class="aui-mail-product">
+                                        <a href="javascript:;" class="news-block-item">
+                                            <!--商品图片-->
+                                            <div class="news-block-item-left">
+                                                <img src="../static/picture/order_complet.png" alt="" style="border-radius: 5px">
+                                            </div>
+                                            <div class="news-block-item-right">
+                                                <div class="item-right-top">
+                                                    <!--商品名-->
+                                                    <div class="item-right-top-succeed">
+                                                        <p>成功参与活动</p>
+                                                    </div>
+                                                    <div class="news-product-left-buttom goods-font">
+                                                        <!--消息时间-->
+                                                        <p id="news-time-day" style="margin-right: 5px;">2018.10.21</p>
+                                                        <p id="news-time-hour"  >23:59:59</p>
+                                                        <!--<p class="goods-color">白色</p>-->
+                                                        <!--<p class="goods-spec" style="margin-left: 5px">尺码：</p>-->
+                                                        <!--<p class="goods-size">M </p>-->
+                                                    </div>
+                                                </div>
+                                                <!--董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠-->
+                                                <!-- 商品价格 -->
+                                                <div class="item-right-buttom">
+                                                    <div class="aui-mail-product-item-top goods-font"><p id="news-content">董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠</p></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!--成功参与活动 未读-->
+                                    <div class="aui-mail-product">
+                                        <a href="javascript:;" class="news-block-item">
+                                            <!--商品图片-->
+                                            <div class="news-block-item-left">
+
+                                                <div class="imgs"><img src="../static/picture/order_complet.png" alt="" style="border-radius: 5px"></div>
+                                                <div class="notice"></div>
+
+                                            </div>
+                                            <div class="news-block-item-right">
+                                                <div class="item-right-top">
+                                                    <!--商品名-->
+                                                    <div class="item-right-top-succeed">
+                                                        <p>成功参与活动</p>
+                                                    </div>
+                                                    <div class="news-product-left-buttom goods-font">
+                                                        <!--消息时间-->
+                                                        <p id="news-time-day" style="margin-right: 5px;">2018.10.21</p>
+                                                        <p id="news-time-hour"  >23:59:59</p>
+                                                        <!--<p class="goods-color">白色</p>-->
+                                                        <!--<p class="goods-spec" style="margin-left: 5px">尺码：</p>-->
+                                                        <!--<p class="goods-size">M </p>-->
+                                                    </div>
+                                                </div>
+                                                <!--董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠-->
+                                                <!-- 商品价格 -->
+                                                <div class="item-right-buttom">
+                                                    <div class="aui-mail-product-item-top goods-font"><p id="news-content">董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠</p></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="divHeight"></div>
+                            </div>
+                        </div>
+
+                        <!-- 已完成订单模块   -->
+                        <div class="tab-panel-item">
+
+                            <div class="aui-mail-product">
+                                <a href="javascript:;" class="news-block-item">
+                                    <!--商品图片-->
+                                    <div class="news-block-item-left">
+
+                                        <div class="imgs"><img src="../static/picture/order_complet.png" alt="" style="border-radius: 5px"></div>
+                                        <div class="notice"></div>
+
+                                    </div>
+                                    <div class="news-block-item-right">
+                                        <div class="item-right-top">
+                                            <!--商品名-->
+                                            <div class="item-right-top-succeed">
+                                                <p>成功参与活动</p>
+                                            </div>
+                                            <div class="news-product-left-buttom goods-font">
+                                                <!--消息时间-->
+                                                <p id="news-time-day2" style="margin-right: 5px;">2018.10.21</p>
+                                                <p id="news-time-hour2"  >23:59:59</p>
+                                                <!--<p class="goods-color">白色</p>-->
+                                                <!--<p class="goods-spec" style="margin-left: 5px">尺码：</p>-->
+                                                <!--<p class="goods-size">M </p>-->
+                                            </div>
+                                        </div>
+                                        <!--董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠-->
+                                        <!-- 商品价格 -->
+                                        <div class="item-right-buttom">
+                                            <div class="aui-mail-product-item-top goods-font"><p id="news-content2">董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠董明珠</p></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <script type="text/javascript" src="../static/js/jquery.min.js"></script>
+        <script type="text/javascript" src="../static/js/tab.js"></script>
+    </body>
+</html>

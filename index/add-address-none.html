@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<!--+++++++++++++++++++++++++++++-->
+<!--20-收货地址管理页面    无收货地址      -->
+<!--+++++++++++++++++++++++++++++-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>收货信息</title>
+        <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport"/>
+        <meta content="yes" name="apple-mobile-web-app-capable"/>
+        <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+        <meta content="telephone=no" name="format-detection"/>
+        <link href="../static/css/address.css" rel="stylesheet" type="text/css"/>
+        <link href="../static/css/order.css" rel="stylesheet" type="text/css"/>
+        <link href="../static/css/style.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="../static/iconfont/iconfont.css">
+    </head>
+    <body style="background-color: #F1F2F4;">
+        <section class="aui-flexView">
+            <!-- 标题 返回按键   -->
+            <header class="aui-navBar aui-navBar-fixed">
+                <a href="javascript:history.go(-1)" class="aui-navBar-item">
+                    <i class="iconfont2 icon-fanhui1"></i>
+                </a>
+                <div class="aui-center">
+                    <span class="aui-center-title">收货信息</span>
+                </div>
+            </header>
+            <!--内容部分-->
+            <section class="aui-scrollView">
+                <div class="aui-tab" data-ydui-tab>
+                    <div class="divHeight"></div>
+                    <div class="tab-panel">
+                        <div class="tab-panel-next">
+                            <!--  无相关订单(默认)  -->
+                                <div class="tab-panel-item tab-active">
+                                    <a href="javascript:;" class="aui-flex">
+                                        <div class="tab-panel-img-address ">
+                                            <img class="aui-flex-img-address" src="../static/picture/kby-zwdz.png">
+                                            <p>是要送去月球吗?请先添加收货地址</p>
+                                            <a href="add-adress.html"><button>添加收货地址</button></a>
+                                        </div>
+                                    </a>
+                                    <!--  无相关订单  -->
+                                    <a href="javascript:;" class="aui-flex">
+                                        <div class="tab-panel-img">
+                                            <!--<h3>申请条件</h3>-->
+                                            <!--<h4>年龄18周岁以上；身份证；信用卡；</h4>-->
+                                        </div>
+                                    </a>
+                                    <a href="javascript:;" class="aui-flex">
+                                        <div class="">
+
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="divHeight"></div>
+                            </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <script type="text/javascript" src="../static/js/jquery.min.js"></script>
+        <script type="text/javascript" src="../static/js/tab.js"></script>
+    </body>
+</html>

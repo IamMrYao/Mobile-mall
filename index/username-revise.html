@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<!--+++++++++++++++++++-->
+<!--用户昵称修改     √ -->
+<!--+++++++++++++++++++-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>昵称</title>
+        <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport"/>
+        <meta content="yes" name="apple-mobile-web-app-capable"/>
+        <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+        <meta content="telephone=no" name="format-detection"/>
+        <link href="../static/css/user.css" rel="stylesheet" type="text/css"/>
+        <link href="../static/css/style.css" rel="stylesheet" type="text/css"/>
+
+        <link rel="stylesheet" href="../static/iconfont/iconfont.css">
+    </head>
+    <body style="background-color: #F1F2F4">
+        <div class="aui-flexView">
+            <header class="aui-navBar aui-navBar-fixed">
+                <a href="user.html" class="aui-navBar-item">
+                    <i class="iconfont2 icon-fanhui1"></i>
+                </a>
+                <div class="aui-center">
+                    <span class="aui-center-title" style="font-weight: 400">昵称</span>
+                </div>
+            </header>
+
+
+                <div class="aui-course-list2">
+                    <div class="input-in">
+                        <!--<i class="icon-search2" id="icon-search2"></i>-->
+                        <!--<input type="text" maxlength="10" placeholder="夏家小妞"  required><br/>-->
+                        <input class="input" id="box_bak" required /><a href="javascript:;" class="clear"></a>
+
+                    </div>
+                </div>
+            <div class="tip">
+                <p>昵称不能超过10个汉子或者20个英文字母，支持中英文、数字、下划线</p>
+            </div>
+             <div class="button-save" onclick="clickme();">保存</div>
+
+        </div>
+        <script type="text/javascript">
+            if(mini.get("inputId").getInputText() != "") {
+                $("#clear").show();
+            } else {
+                $("#clear").hide();
+            }
+
+            function showToast(msg,duration){
+                duration=isNaN(duration)?3000:duration;
+                var m = document.createElement('div');
+                m.innerHTML = msg;
+                m.style.cssText="width:40%; min-width:180px; background:#000; opacity:0.6; height:auto;min-height: 20px; color:#fff; line-height:20px; text-align:center; border-radius:8px; position:fixed; top:80%; left:28%; z-index:999999;";
+                document.body.appendChild(m);
+                setTimeout(function() {
+                    var d = 0.5;
+                    m.style.webkitTransition = '-webkit-transform ' + d + 's ease-in, opacity ' + d + 's ease-in';
+                    m.style.opacity = '0';
+                    setTimeout(function() { document.body.removeChild(m) }, d * 1000);
+                }, duration);
+            }
+
+            function clickme(){
+                showToast("更改成功",2000);
+            }
+
+        </script>
+
+    </body>
+</html>

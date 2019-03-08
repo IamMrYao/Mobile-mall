@@ -1,0 +1,316 @@
+﻿@charset "utf-8";
+/* CSS Document */
+a {
+	text-decoration: none
+}
+
+/*.texts {*/
+	/*color: #C40000;*/
+	/*font-size: 15px;*/
+	/*margin-top: 5px;*/
+/*}*/
+
+/*.hotproduct {*/
+	/*height: auto;*/
+	/*background-color: #CCCCCC;*/
+/*}*/
+
+/*.dollor {*/
+	/*width: 90%;*/
+	/*margin-left: 5%;*/
+	/*font-size: 18px;*/
+	/*margin-top: 10px;*/
+	/*font-weight: bold;*/
+/*}*/
+
+/*.sellp {*/
+	/*width: 90%;*/
+	/*margin-left: 5%;*/
+	/*font-size: 14px;*/
+	/*color: #C40000;*/
+	/*margin-top: 5px;*/
+/*}*/
+
+/*.miho {*/
+	/*width: 90%;*/
+	/*margin-left: 5%;*/
+	/*margin-top: 10px;*/
+/*!*border-bottom:1px solid #CCCCCC;*!*/
+	/*height: 20px;*/
+/*}*/
+
+/*.model {*/
+	/*width: 90%;*/
+	/*margin-left: 5%;*/
+	/*margin-top: 10px;*/
+/*!*border-bottom:1px solid #CCCCCC;*!*/
+	/*height: 30px;*/
+/*}*/
+
+/*.xia {*/
+	/*float: right;*/
+	/*text-align: right;*/
+/*}*/
+
+/*.footerp {*/
+	/*height: 50px;*/
+	/*background-color: #098FD5;*/
+	/*margin: 0px auto;*/
+	/*position: fixed;*/
+/*!*固定作用*!*/
+	/*bottom: 0px;*/
+/*!*ie6下样式，加下划线表示只针对ie6 的hack *!*/
+	/*_position: absolute;*/
+/*!* 把导航栏位置定义为绝对位置  关键*!*/
+	/*_down: expression(documentElement.scrollDown + "px");*/
+ /*!* 把导航栏位置放在浏览器垂直滚动条的顶端  关键 *!*/
+	/*z-index: 99999;*/
+ /*!* 让导航栏浮在网页的高层位置，遇到flash和图片时候也能始终保持最外层 *!*/
+	/*width: 100%;*/
+/*}*/
+
+/*.textp {*/
+	/*color: #FFFFFF;*/
+	/*font-size: 12px;*/
+	/*margin-top: 5px;*/
+	/*padding-left: 10px;*/
+/*}*/
+
+/*.fot {*/
+	/*margin-top: 5px;*/
+/*}*/
+
+/*.fot_a {*/
+	/*padding-left: 22px;*/
+/*}*/
+.buy-out{
+	background: rgba(0,0,0,0.5);
+	background: -webkit-rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	display: none;
+	overflow-x: hidden;
+	z-index: 1001;
+}
+.buy {
+	height: auto;
+	z-index: 1001;
+	position: fixed;
+	bottom: 0px;
+	background: #fff;
+	left: 0;
+	right: 0;
+}
+.taobao {
+	height: auto;
+	background-color:#D58512;
+	bottom: 0;
+	display: none;
+	z-index: 1001;
+	position: fixed;
+	bottom: 50px;
+	background: #fff;
+	left: 0;
+	right: 0;
+}
+.col-lg-3{
+	padding-bottom: 80px
+}
+.chose_a {
+	height: 100px;
+}
+
+.poward {
+	position: relative;
+}
+
+.imitation {
+	background-color: #FFFFFF;
+	height: 100px;
+	position: absolute;
+	width: 100px;
+	margin: 10px 0 10px 5px;
+	
+/*margin-left:10px;top:;*/
+	left: 10px;
+	bottom: 15px;
+	z-index: 999;
+}
+.searc{
+	border:none;
+	outline:medium;
+	margin-left: 5px;
+}
+.concent_a {
+	height: 25px;
+	font-size: 13px;
+	line-height: 25px;
+	margin-top: 10px;
+	color: red;
+	display: inline-flex;
+}
+.text-l{
+	color: red;
+	font-size: 20px;
+	
+}
+.text-2{
+	text-align: center;
+	color: red;
+	font-size: 16px;
+
+}
+.concent_b {
+	height: 25px;
+	font-size: 14px;
+	line-height: 25px;
+}
+
+.concent_c {
+	height: 25px;
+	font-size: 14px;
+	line-height: 25px;
+}
+.laisi {
+	color: #000000;
+	font-size: 16px;
+	width: 95%;
+	margin-left: 4%;
+	margin-top: 10px;
+}
+
+.laisi1 {
+	color: #000000;
+	font-size: 14px;
+	width: 95%;
+	margin-left: 2.5%;
+	margin-top: 10px;
+}
+
+.laisigo {
+	width: 95%;
+	margin-left: 2.5%;
+
+	display: inline-flex;
+}
+.laisigo2 {
+	width: 95%;
+	margin-left: 4%;
+	display: inline-flex;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #f5f5f5;
+}
+
+.laisigoh {
+	width: 95%;
+	margin-left: 2.5%;
+	margin-top: 15px;
+	border-bottom: 1px solid #CCCCCC;
+	height: 50px;
+}
+
+.sosos {
+	font-size: 16px;
+}
+.nowbuy{
+	width: 100%;
+	background-color:#F23030 ;
+	z-index: 10000;
+}
+.nowbuy-but{
+	color: #FFF;
+	font-size: 20px;
+	text-align: center;
+	padding: 10px 0 ;
+}
+.zcxs {
+	width: 95%;
+	margin-left: 2.5%;
+	margin-top: 10px;
+}
+
+.jia {
+	width: 95%;
+	margin-left: 2.5%;
+}
+.zcxs {
+	display: none;
+}
+
+.shoujihao {
+	border-bottom: 1px solid #CCCCCC;
+	border-top: 1px solid #CCCCCC;
+	height: 40px;
+}
+
+.shoujihao1 {
+	border-bottom: 1px solid #CCCCCC;
+	height: 40px;
+}
+
+.rr {
+	display: none;
+	margin-top: 10px;
+	width: 95%;
+	margin-left: 2.5%;
+}
+
+.shuliang {
+	width: 100%;
+	margin:15px 0 20px 15px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #f5f5f5;
+}
+.shuliang button{
+	width:35px;
+	padding: 2px 0 ;
+	background-color: #f5f5f5;
+	font-size:18px;
+	color:#cccccc;
+}
+.duigou {
+	height: 50px;
+}
+.img-responsive{
+	margin: 5% ;
+
+	width:25px;
+}
+.dingbu {
+	height: 50px;
+}
+.pires{
+	display: inline-flex;
+	color: red;
+}
+.gray {
+	height: 1px;
+	background-color: #CCCCCC;
+}
+.jump {
+	float: left;
+	width: 50%;
+	position: relative;
+	min-height: 1px;
+	margin-top:15px;
+
+}
+.evaluate {
+	height: 50px;
+	line-height: 50px;
+	/*text-align: center;*/
+	float: left;
+	text-align: left;
+	width:50%;
+	margin-left: 2%
+}
+
+.chose_noll {
+	display: none;
+}
+
+.theimgs {
+	position: relative;
+	min-height: 1px;
+}

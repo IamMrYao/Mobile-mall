@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>商家入驻</title>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <!--导入css-->
+
+    <link type="text/css" href="../static/css/join.css" rel="stylesheet" />
+    <link type="text/css" href="../static/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../static/iconfont/iconfont.css">
+</head>
+<body style="background-color: #fdcdcb">
+<section class="flexView" style="background-color: #fdcdcb">
+
+    <header class="aui-navBar aui-navBar-fixed">
+
+        <div class="aui-center">
+            <span class="aui-center-title">商家入驻</span>
+        </div>
+    </header>
+    <!--内容部分-->
+    <section class="goods-show">
+
+        <div class="goods-img">
+            <img src="../static/picture/111.png" class="goods-imgss"/>
+        </div>
+        <div class="buttons">
+            <div class="red-button">我要上传广告</div>
+            <div class="red-button" onclick="javascript:OpenDiv();" id="open">商家后台管理</div>
+        </div>
+
+
+    </section>
+    <!--填写弹出资料弹出框-->
+    <div class="info-input"id="info-input" >
+<!--弹出框 信息填写：-->
+        <div class=" info-input-in"style="">
+            <div class="info-input-first">
+                <div class="info-input-other">
+                    <!--店铺名-->
+                    <i class="icon-search"></i>
+                    <input class="name-shop" placeholder="请输入店铺名称">
+                    <!--省市县区-->
+                    <input class="address-shop" placeholder="请选择省/市/区">
+                    <!--具体地址-->
+                    <input class="addresss-shop" placeholder="请输入具体地址">
+                    <!--电话号码-->
+
+                    <input class="tel-shop" placeholder="请输入电话号码">
+                    <!--<p style="borde-left: 1px dashed #fe3b37;width: 30%">获取验证码</p>-->
+
+                    <!--验证码-->
+                    <input class="code-shop" placeholder="请输入验证码">
+                    <!--密码-->
+                    <input class="pw-shop" placeholder="请输入登录密码">
+                    <!--重复密码-->
+                    <input class="repw-shop"  placeholder="请再次输入登录密码">
+                </div>
+            </div>
+            <div class="info-input-second">
+                <div class ="info-input-pic">
+                    <div class="info-input-tit">
+                        店铺照片
+                    </div>
+                    <!--店铺照片: 使用背景图方式,更改info-input-pic1:background属性 ; 传入路径  -->
+                    <div class="info-img">
+                        <div class="info-input-pic1"></div>
+                        <div class="info-input-pic1"></div>
+                        <div class="info-input-pic1"></div>
+                    </div>
+                </div>
+
+            </div>
+            <!--上传执照-->
+            <div class="info-input-third">
+                <div class ="info-input-zhizhao">
+                    <div class="info-input-tit">
+                        资质照片
+                    </div>
+                    <div class="del">
+                        <img src="../static/picture/del.png" width="25px"/>
+                    </div>
+                    <div class="info-zizhi-pic">
+                        <div class="info-zizhi-pic1"></div>
+                        <div class="info-zizhi-pic2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="agree-choose">
+                <p><input type="checkbox" name="category" value="我已经阅读商家注册协议" />我已经阅读商家注册协议 </p>
+                <!--此处需要判断  -->
+                <div id="the-succeed" onclick="javascript:OpenDiv2();"><img src="../static/picture/lastbutton.png" width="95%"></div>
+            </div>
+        </div>
+    </div>
+    <!--成功弹出框-->
+    <div class="updown-success" id="open-succeed" >
+        <div class="updown-success-in">
+            <div class="updown-success-tit">
+                提交成功
+            </div>
+            <div class="updown-success-content">
+                我们会在1个工作日内对您的信息进行审核,请您耐心等待
+            </div>
+            <div class="updown-success-choose">
+                <div class="success-choose-left" id="ok-sure" onclick="javascript:CloseDiv();">好的</div>
+            </div>
+        </div>
+    </div>
+    <!--失败弹出框-->
+    <div class="updown-success">
+        <div class="updown-success-in">
+            <div class="updown-success-tit">
+                提交失败
+            </div>
+            <div class="updown-success-content">
+                您提交的入驻申请审核失败请重新提交申请
+            </div>
+            <div class="updown-success-choose">
+                <div class="success-choose-left" id="than-sure" onclick="javascript:CloseDiv();">重新提交审核</div>
+            </div>
+        </div>
+
+    </div>
+    <table width="100%" border="0" cellspacing="0" class="nav">
+        <tr>
+            <td width="25" class="foot"><a href="index.html"><p>首页</p></a></td>
+            <td width="25" class="foot"><span><p>商家入驻</p></span></td>
+            <td width="25" class="foot"><a href="user.html"><p>我的中心</p></a></td>
+        </tr>
+
+    </table>
+</section>
+<script type="text/javascript" src="../static/js/jquery.min.js"></script>
+<script type="text/javascript" src="../static/js/tab.js"></script>
+<script>
+    function OpenDiv(){
+        document.getElementById("info-input").style.display="block";
+        document.getElementById("open").style.display="block";
+    };
+    // 成功
+    function OpenDiv2(){
+
+        document.getElementById("open-succeed").style.display="block";
+        document.getElementById("the-succeed").style.display="block";
+
+    };
+    //失败
+    function OpenDiv3(){
+
+        document.getElementById("open-fail").style.display="block";
+        document.getElementById("the-fail").style.display="block";
+
+    };
+// 好的按钮
+    function CloseDiv(){
+        document.getElementById("open-succeed").style.display="none";
+
+    }
+</script>
+</body>
+</html>

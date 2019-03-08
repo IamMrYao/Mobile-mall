@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!--+++++++++++++++++++++++++++++-->
+<!--27-订单-已完成-->
+<!--33-红包库存弹窗-->
+<!--31-商家红包-我的红包-->
+<!--+++++++++++++++++++++++++++++-->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>红包</title>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <!--导入css-->
+    <link type="text/css" href="../static/css/red.css" rel="stylesheet" />
+    <link type="text/css" href="../static/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../static/iconfont/iconfont.css">
+</head>
+<body style="background-color: #F1F2F4;">
+<section class="aui-flexView">
+    <!-- 标题栏目 返回按键   -->
+    <header class="aui-navBar aui-navBar-fixed">
+        <a href="javascript:history.go(-1)" class="aui-navBar-item">
+            <i class="iconfont2 icon-fanhui1"></i>
+        </a>
+        <div class="aui-center">
+            <span class="aui-center-title">红包</span>
+        </div>
+    </header>
+    <!--内容部分-->
+    <section class="aui-scrollView">
+        <div class="aui-tab" data-ydui-tab>
+            <ul class="tab-nav">
+                <!--顶部导航栏切换  切换效果js:tab.js第59行 -->
+                <li class="tab-nav-item tab-active " >
+                    <a href="javascript:;">已发出(2)</a>
+                </li>
+                <li class="tab-nav-item" >
+                    <a href="javascript:;">红包库存(1)</a>
+                </li>
+            </ul>
+            <!--分割线-->
+            <div class="divHeight"></div>
+            <!--红包库存页面模块-->
+            <div class="tab-panel-new">
+                <div class="aui-mail-product-new">
+                    <a href="javascript:;" class="news-block-item">
+                        <!--红包图片-->
+                        <div class="news-block-item-left-new">
+                            <img src="../static/picture/sy-hb.png" alt="" style="border-radius: 5px">
+                        </div>
+                        <!--分界线-->
+                        <div class="divHeight-h"></div>
+
+                        <div class="news-block-item-right">
+                            <div class="item-right-top">
+                                <!--红包名-->
+                                <div class="item-right-top-succeed">
+                                    <p>1级店铺红包 最大金额50</p>
+                                </div>
+                            </div>
+                            <!-- 价格 -->
+                            <div class="item-right-buttom">
+                                <div class="item-right-buttem-l">
+                                    <div class="aui-mail-product-item-top goods-font"><li id="news-content3">• 消费50可用</li></div>
+                                    <div class="aui-mail-product-item-top goods-font"><li id="news-content4">• 剩余2000</li></div>
+                                </div>
+                                <div class="item-right-buttem-r">
+                                    <div class="item-right-b-new">发送</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--已经发出的红包 模块-->
+            <div class="tab-panel-new">
+                <div class="aui-mail-product-news">
+                        <!--图片-->
+                        <div class="red-time">
+                            <div class="red-time-pic">
+                                <img src="../static/picture/sy-hb.png" alt="" style="border-radius: 5px">
+                            </div>
+                            <div class="red-time-hour">
+                                <p>2019年1月11日</p>
+                                <p>13:42:21</p>
+                            </div>
+                        </div>
+                        <div class="divHeight-x"></div>
+                        <div class="red-time-table">
+                            <div class="table-first" >
+                                <div class="table-first-top">
+                                    <div class="table-first-top-f">
+                                        <p>红包类型：</p>
+                                        <p>2级红包</p>
+                                    </div>
+                                    <div class="table-first-top-f">
+                                        <p>发送数量：</p>
+                                        <p>100个</p>
+                                    </div>
+                                </div>
+                                <div class="table-first-top  table-first-buttom">
+                                    <div class="table-first-top-f">
+                                        <p>已领：</p><p>10</p>
+                                    </div>
+                                    <div class="table-first-top-f">
+                                        <p>已用：</p><p>8</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <!--红包库存弹窗 点击发送按钮弹出框-->
+
+            <div class="send">
+                <div class="send-in">
+                    <div class="send-tit">
+                        发送红包
+                    </div>
+                    <!--发送红包弹出框 -->
+                    <div class="send-center">
+                        <div class=" shuliang">
+                            <ul style="list-style-type: none;">
+                                <li>
+                                    <button style="font-size:22px;" >-</button>
+                                    <!--弹出框中间按钮样式和大小 位置-->
+                                    <button style="width:100px;font-size:21px;font-weight:600;margin: 0 -6px" > 1 </button>
+                                    <button style="font-size:22px;">+</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--弹出框下方按钮样式 确定：send-true（文字白色 背景红色）；取消：send-true（文字黑色 背景白色）-->
+                    <div class="send-button">
+                        <div class="send-false">取消</div>
+                        <div class="send-true">确定</div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</section>
+<script type="text/javascript" src="../static/js/jquery.min.js"></script>
+<script type="text/javascript" src="../static/js/tab.js"></script>
+</body>
+</html>

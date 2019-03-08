@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>所在地区</title>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <!--导入css-->
+    <link type="text/css" href="../static/css/address.css" rel="stylesheet" />
+    <link type="text/css" href="../static/css/ydui.css" rel="stylesheet">
+    <link type="text/css" href="../static/css/order.css" rel="stylesheet" />
+    <link type="text/css" href="../static/css/style.css" rel="stylesheet" />
+    <link type="text/css" href="../static/iconfont/iconfont.css" rel="stylesheet">
+
+</head>
+<body style="background-color: #F1F2F4;">
+    <section class="aui-flexView">
+        <!-- 标题 返回按键   -->
+        <header class="aui-navBar aui-navBar-fixed">
+            <a href="javascript:history.go(-1)" class="aui-navBar-item">
+                <i class="iconfont2 icon-fanhui1"></i>
+            </a>
+            <div class="aui-center">
+                <span class="aui-center-title">所在地区</span>
+            </div>
+        </header>
+        <!--内容部分-->
+        <section class="aui-scrollView">
+            <div class="aui-tab" data-ydui-tab>
+
+                <!--分割线-->
+                <div class="divHeight"></div>
+                <!--待消费栏 模块-->
+                <div class="tab-panel">
+                    <div class="tab-panel-next">
+                        <div class="cell-item">
+                            <div class="cell-left">所在地区：</div>
+                            <div class="cell-right cell-arrow">
+                                <input type="text" class="cell-input" readonly id="J_Address2" value="新疆 乌鲁木齐市 天山区" placeholder="请选择收货地址">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </section>
+
+    <script type="text/javascript" src="../static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../static/js/ydui.citys.js"></script>
+    <script type="text/javascript" src="../static/js/ydui.js"></script>
+</body>
+</html>
